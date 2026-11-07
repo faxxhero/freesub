@@ -25,24 +25,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇱 以色列 (Israel) 02 - netmix",
-      "server": "64.176.163.182",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "exploreeducationsectoropportunitiestodayandadvancecareers.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 03 - netmix",
+      "tag": "🇮🇱 以色列 (Israel) 02 - netmix",
       "server": "dddz-1-x.473221.xyz",
       "server_port": 43117,
       "uuid": "65ec84f5-0dd4-4582-8b4f-592e50b22116",
@@ -67,8 +51,7 @@
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 - netmix",
-        "🇮🇱 以色列 (Israel) 02 - netmix",
-        "🇮🇱 以色列 (Israel) 03 - netmix"
+        "🇮🇱 以色列 (Israel) 02 - netmix"
       ]
     },
     {
@@ -76,8 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - netmix",
-        "🇮🇱 以色列 (Israel) 02 - netmix",
-        "🇮🇱 以色列 (Israel) 03 - netmix"
+        "🇮🇱 以色列 (Israel) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

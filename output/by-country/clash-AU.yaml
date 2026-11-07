@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - netmix
+  server: 169.197.142.22
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇦🇺 澳大利亚 (Australia) 02 - netmix
   server: 152.67.115.203
   port: 443
   udp: true
@@ -14,35 +22,22 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇦🇺 澳大利亚 (Australia) 02 - netmix
+- name: 🇦🇺 澳大利亚 (Australia) 03 - netmix
   server: au001.zestapp778.com
   port: 54374
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: au001.zestapp778.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 03 - netmix
+  skip-cert-verify: false
+- name: 🇦🇺 澳大利亚 (Australia) 04 - netmix
   server: 45.63.30.142
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 45.63.30.142
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 04 - netmix
-  server: dddz-3-z.473221.xyz
-  port: 33162
-  udp: true
-  type: vless
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Qp9_bpGExQK_h5LMXLLwVA2o1vifMQwGJ6Qh2-X26Ro
-    short-id: 3fe1e73fc9ecc8d7
-  servername: download-porter.hoyoverse.com
-  client-fingerprint: edge
+  sni: connectwithemployerstohireyouridealteam.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
