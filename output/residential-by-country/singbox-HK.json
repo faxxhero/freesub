@@ -6,11 +6,11 @@
     {
       "type": "tuic",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
-      "server": "54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com",
+      "server": "58.152.81.104",
       "server_port": 443,
       "uuid": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
       "password": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
-      "congestion_control": "bbr",
+      "congestion_control": "cubic",
       "udp_relay_mode": "native",
       "tls": {
         "enabled": true,
@@ -22,18 +22,56 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
+      "server": "633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "1cce7df2-251c-11ee-9409-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix",
+      "server": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "3bd247a8-993e-11ec-a8bf-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
