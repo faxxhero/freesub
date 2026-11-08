@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
-      "server": "catnet-tw.kunlun04dns.com",
-      "server_port": 28031,
-      "method": "aes-128-gcm",
-      "password": "b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-      "server": "catnet-tw.kunlun04dns.com",
-      "server_port": 28032,
-      "method": "aes-128-gcm",
-      "password": "b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
       "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -33,48 +17,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
       "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - netmix",
-      "server": "152.32.167.33",
-      "server_port": 443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4",
-          "short_id": "cff998a4"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - netmix",
-      "server": "catnet-tw.kunlun04dns.com",
-      "server_port": 28030,
-      "method": "aes-128-gcm",
-      "password": "b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 07 - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
       "server": "83.147.13.74",
       "server_port": 8443,
       "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
@@ -93,26 +48,13 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 08 - netmix",
-      "server": "catnet-tw.kunlun04dns.com",
-      "server_port": 28033,
-      "method": "aes-128-gcm",
-      "password": "b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 05 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 06 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 07 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 08 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 03 - netmix"
       ]
     },
     {
@@ -121,12 +63,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 05 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 06 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 07 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 08 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

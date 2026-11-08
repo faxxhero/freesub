@@ -4,22 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - netmix",
-      "server": "188.114.97.6",
-      "server_port": 80,
-      "uuid": "6faeb6a0-5055-4e4b-8fb1-ffd77e57aefa",
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "somersby.pt.r3xxe.eu.cc"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - netmix",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - netmix",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -35,19 +21,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - netmix",
-      "server": "45.63.30.142",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "45.63.30.142",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - netmix",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - netmix",
       "server": "au001.zestapp778.com",
       "server_port": 54374,
       "password": "5t6i121em5lkmsmk",
@@ -62,20 +36,48 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - netmix",
-      "server": "catnet-other.kunlun04dns.com",
-      "server_port": 28048,
-      "method": "aes-128-gcm",
-      "password": "b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41"
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - netmix",
+      "server": "45.63.30.142",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - netmix",
-      "server": "catnet-other.kunlun04dns.com",
-      "server_port": 28047,
-      "method": "aes-128-gcm",
-      "password": "b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41"
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - netmix",
+      "server": "au.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "au.tronsg.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - netmix",
+      "server": "user02.godvpn.lol",
+      "server_port": 62405,
+      "password": "4bbfa33a-449a-4a50-8dfc-6d0de880f7bc",
+      "tls": {
+        "enabled": true,
+        "server_name": "user02.godvpn.lol",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
@@ -86,8 +88,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - netmix",
         "🇦🇺 澳大利亚 (Australia) 03 - netmix",
         "🇦🇺 澳大利亚 (Australia) 04 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 05 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 06 - netmix"
+        "🇦🇺 澳大利亚 (Australia) 05 - netmix"
       ]
     },
     {
@@ -98,8 +99,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - netmix",
         "🇦🇺 澳大利亚 (Australia) 03 - netmix",
         "🇦🇺 澳大利亚 (Australia) 04 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 05 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 06 - netmix"
+        "🇦🇺 澳大利亚 (Australia) 05 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

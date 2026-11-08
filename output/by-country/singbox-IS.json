@@ -6,23 +6,23 @@
     {
       "type": "vless",
       "tag": "🇮🇸 冰岛 (Iceland) 01 - netmix",
-      "server": "8.6.112.0",
-      "server_port": 8443,
-      "uuid": "8eb92a78-ec8d-4ff6-8a2d-8b801367be87",
+      "server": "191.44.112.170",
+      "server_port": 443,
+      "uuid": "46d221fa-e9b4-748c-4eae-019a88e42991",
       "tls": {
         "enabled": true,
-        "server_name": "KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV",
+        "server_name": "orbylume.my.to",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
+        "path": "/tvpn-tor/is",
         "headers": {
-          "Host": "KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV"
+          "Host": "orbylume.my.to"
         }
       }
     },

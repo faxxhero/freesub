@@ -15,7 +15,7 @@
         "server_name": "esso-music-coroborito.keno.su",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
