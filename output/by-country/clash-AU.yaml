@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - netmix
-  server: 169.197.142.22
-  port: 18000
+  server: 188.114.97.6
+  port: 80
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 6faeb6a0-5055-4e4b-8fb1-ffd77e57aefa
+  network: ws
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: somersby.pt.r3xxe.eu.cc
 - name: 🇦🇺 澳大利亚 (Australia) 02 - netmix
   server: 152.67.115.203
   port: 443
@@ -23,6 +26,14 @@ proxies:
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
 - name: 🇦🇺 澳大利亚 (Australia) 03 - netmix
+  server: 45.63.30.142
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 45.63.30.142
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 04 - netmix
   server: au001.zestapp778.com
   port: 54374
   udp: true
@@ -30,14 +41,20 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: au001.zestapp778.com
   skip-cert-verify: false
-- name: 🇦🇺 澳大利亚 (Australia) 04 - netmix
-  server: 45.63.30.142
-  port: 443
+- name: 🇦🇺 澳大利亚 (Australia) 05 - netmix
+  server: catnet-other.kunlun04dns.com
+  port: 28048
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectwithemployerstohireyouridealteam.com
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-128-gcm
+  password: b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41
+- name: 🇦🇺 澳大利亚 (Australia) 06 - netmix
+  server: catnet-other.kunlun04dns.com
+  port: 28047
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +64,8 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - netmix
   - 🇦🇺 澳大利亚 (Australia) 03 - netmix
   - 🇦🇺 澳大利亚 (Australia) 04 - netmix
+  - 🇦🇺 澳大利亚 (Australia) 05 - netmix
+  - 🇦🇺 澳大利亚 (Australia) 06 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +75,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - netmix
   - 🇦🇺 澳大利亚 (Australia) 03 - netmix
   - 🇦🇺 澳大利亚 (Australia) 04 - netmix
+  - 🇦🇺 澳大利亚 (Australia) 05 - netmix
+  - 🇦🇺 澳大利亚 (Australia) 06 - netmix
 rules:
 - MATCH,PROXIES

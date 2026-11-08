@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix",
+      "server": "90.156.230.179",
+      "server_port": 443,
+      "uuid": "dc95c1dd-2cd3-414c-8cf1-71ae86dad666",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "kz-cdn-prsv-forum.keno.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Au1rmQdDRjlEJk17IfLQv5PBUEEosMWNhAlrWZj6mnY",
+          "short_id": "14324280"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix",
       "server": "38.107.234.57",
       "server_port": 80,
       "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
@@ -14,13 +35,13 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "viber.com"
+          "Host": "38.107.234.57"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix",
       "server": "109.248.170.119",
       "server_port": 13447,
       "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
@@ -40,7 +61,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix",
       "server": "95.57.50.87",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -66,7 +87,8 @@
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix"
       ]
     },
     {
@@ -75,7 +97,8 @@
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
