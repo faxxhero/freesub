@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 印尼 (Indonesia) 01 - netmix
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16298
+- name: 🇱🇺 卢森堡 (Luxembourg) 01 - netmix
+  server: 87.228.61.175
+  port: 1443
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: tAGGzgRCi6W95UwG0qerf6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 印尼 (Indonesia) 01 - netmix
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 印尼 (Indonesia) 01 - netmix
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - netmix
 rules:
 - MATCH,PROXIES

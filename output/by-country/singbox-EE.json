@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - netmix",
-      "server": "esso-music-coroborito.keno.su",
+      "server": "31.56.187.175",
       "server_port": 443,
       "uuid": "dc95c1dd-2cd3-414c-8cf1-71ae86dad666",
       "flow": "xtls-rprx-vision",
@@ -15,7 +15,7 @@
         "server_name": "esso-music-coroborito.keno.su",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

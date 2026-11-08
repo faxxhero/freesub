@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - netmix
-  server: esso-music-coroborito.keno.su
+  server: 31.56.187.175
   port: 443
   udp: true
   type: vless
@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: _MeP-WwmolUvi6wMXNoSs_zo6miG_OW7xk4ibzADiHY
   servername: esso-music-coroborito.keno.su
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - netmix
   server: 5.129.202.80
   port: 443
