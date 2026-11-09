@@ -25,21 +25,9 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇱 以色列 (Israel) 02 - netmix",
-      "server": "64.176.163.182",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "exploreeducationsectoropportunitiestodayandadvancecareers.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 03 - netmix",
-      "server": "193.203.10.188",
+      "tag": "🇮🇱 以色列 (Israel) 02 - netmix",
+      "server": "no.gacvpn.site",
       "server_port": 443,
       "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
       "flow": "xtls-rprx-vision",
@@ -58,13 +46,38 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇮🇱 以色列 (Israel) 03 - netmix",
+      "server": "64.176.163.182",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "exploreeducationsectoropportunitiestodayandadvancecareers.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇮🇱 以色列 (Israel) 04 - netmix",
+      "server": "129.159.156.109",
+      "server_port": 50160,
+      "password": "f25f19f29ce3fb53a35bf1b35b452a43",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 - netmix",
         "🇮🇱 以色列 (Israel) 02 - netmix",
-        "🇮🇱 以色列 (Israel) 03 - netmix"
+        "🇮🇱 以色列 (Israel) 03 - netmix",
+        "🇮🇱 以色列 (Israel) 04 - netmix"
       ]
     },
     {
@@ -73,7 +86,8 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - netmix",
         "🇮🇱 以色列 (Israel) 02 - netmix",
-        "🇮🇱 以色列 (Israel) 03 - netmix"
+        "🇮🇱 以色列 (Israel) 03 - netmix",
+        "🇮🇱 以色列 (Israel) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

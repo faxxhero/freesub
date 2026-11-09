@@ -26,26 +26,6 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04 - netmix
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 05 - netmix
-  server: fuji.etherhub.cc
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg
-    short-id: bd6f67b6b2152b45
-  servername: fuji.etherhub.cc
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 06 - netmix
   server: 45.32.10.7
   port: 443
   udp: true
@@ -53,49 +33,14 @@ proxies:
   password: 96ab5cd282733fd4c312a61f972f330a
   sni: vp3.yysyy.online
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 07 - netmix
-  server: 8.211.175.236
-  port: 8443
+- name: 🇯🇵 日本 (Japan) 05 - netmix
+  server: 84.247.155.196
+  port: 443
   udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - netmix
-  server: 103.75.118.228
-  port: 12683
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 09 - netmix
-  server: 3.114.220.22
-  port: 18007
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10 - netmix
-  server: freedom.chenlan.top
-  port: 12765
-  udp: true
-  type: hysteria2
-  password: STYyftThFn
-  sni: freedom.chenlan.top
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 11 - netmix
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 06 - netmix
   server: 167.179.108.225
   port: 443
   udp: true
@@ -103,20 +48,51 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: discoverparttimepositionsandsupplementyourincomeguide.com
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 12 - netmix
-  server: 152.69.195.67
-  port: 47878
+- name: 🇯🇵 日本 (Japan) 07 - netmix
+  server: 79.137.197.212
+  port: 2105
   udp: true
   type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- name: 🇯🇵 日本 (Japan) 13 - netmix
-  server: 84.247.155.196
-  port: 443
+  uuid: 3c88be7f-dc22-4a4a-b1b5-9a2efc5a721e
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 (Japan) 08 - netmix
+  server: 138.3.208.26
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 14 - netmix
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - netmix
+  server: freedom.chenlan.top
+  port: 12765
+  udp: true
+  type: hysteria2
+  password: STYyftThFn
+  sni: freedom.chenlan.top
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 10 - netmix
+  server: 3.114.220.22
+  port: 10583
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 11 - netmix
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -128,46 +104,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 15 - netmix
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: '1'
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 16 - netmix
-  server: 154.31.112.237
-  port: 26418
-  udp: true
-  type: vless
-  uuid: 9e53ce49-fb61-45c3-a3c1-bd8df1f9749f
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 17 - netmix
-  server: 154.31.112.237
-  port: 26418
-  udp: true
-  type: vless
-  uuid: bb7ece87-1ef1-4d49-8847-7e8736bb77a8
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 18 - netmix
+  client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 12 - netmix
   server: 154.31.112.237
   port: 26418
   udp: true
@@ -182,352 +120,9 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇯🇵 日本 (Japan) 19 - netmix
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 0985e268-5c1c-4141-9d96-139f8046c47c
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇯🇵 日本 (Japan) 20 - netmix
-  server: 107.191.53.86
-  port: 4798
-  udp: true
-  type: vless
-  uuid: 0d4b9895-d763-4ceb-90d0-9f32fde48f93
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 21 - netmix
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 22 - netmix
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: 4f1f5604-a256-4432-a477-52c3dce7dded
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 23 - netmix
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: fb4c1c39-2204-43bb-853c-f8579a77feb4
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 24 - netmix
-  server: 57.129.130.34
-  port: 52014
-  udp: true
-  type: vless
-  uuid: cf0091de-cde9-4be7-9368-4dfc2870db59
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 25 - netmix
-  server: 57.129.130.34
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 94711300-6fa3-489e-b54e-7135e95027d1
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 26 - netmix
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 091ea5fd-4e8d-4459-90af-e4d10179efff
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 27 - netmix
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: 3e956106-7f92-4cbf-bf77-715d3890fa84
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 28 - netmix
-  server: 57.129.130.34
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 6f33c3ef-ac0c-4138-8562-531d8d0eddb0
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 29 - netmix
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 3dbf58d7-53fc-4fad-8779-1c867e024fd0
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 30 - netmix
-  server: 80.240.18.227
-  port: 10051
-  udp: true
-  type: vless
-  uuid: 711b6476-63fc-4f01-b4e0-d44e17d79383
-  tls: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇯🇵 日本 (Japan) 31 - netmix
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 201e0019-2e79-4147-8a09-e510d630abeb
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 32 - netmix
-  server: 5.75.195.83
-  port: 56879
-  udp: true
-  type: vless
-  uuid: 8cf85f7e-7b77-4120-af63-1f9d8df59c87
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 33 - netmix
-  server: 79.137.199.52
-  port: 21
-  udp: true
-  type: vless
-  uuid: f346f223-ebf6-4da3-955e-425de7e9c372
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇯🇵 日本 (Japan) 34 - netmix
-  server: 178.105.133.160
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 93a35a9c-103d-493b-8445-2fd9760810a3
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 35 - netmix
-  server: 147.45.42.73
-  port: 20443
-  udp: true
-  type: vless
-  uuid: fcbb9617-7b3c-4b21-8a91-a57350a75222
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 36 - netmix
-  server: 178.105.133.160
-  port: 4443
-  udp: true
-  type: vless
-  uuid: d43249eb-f80a-49a8-b2ed-9ddb08a448c7
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 37 - netmix
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: c6e09f95-bf02-4854-bcba-7a977a0f8ecd
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 38 - netmix
-  server: 79.137.199.52
-  port: 21
-  udp: true
-  type: vless
-  uuid: 763e2ddd-c830-4f4f-801c-f6f2c3418d4f
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 39 - netmix
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: e121912d-2931-4326-a7f8-2c1db8376b18
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇯🇵 日本 (Japan) 40 - netmix
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: aa4bd34c-b94d-48f1-a7f0-e127e89ca7cb
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 41 - netmix
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: 50b0b78d-dab1-4952-9388-9143849e0766
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇯🇵 日本 (Japan) 42 - netmix
+- name: 🇯🇵 日本 (Japan) 13 - netmix
   server: 3.114.220.22
-  port: 10583
+  port: 18007
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -538,66 +133,64 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 43 - netmix
-  server: 109.120.155.155
-  port: 444
+- name: 🇯🇵 日本 (Japan) 14 - netmix
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 15 - netmix
+  server: 185.220.238.77
+  port: 11543
+  udp: true
+  type: trojan
+  password: HutaoCloud
+  sni: 185.220.238.77
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api
+- name: 🇯🇵 日本 (Japan) 16 - netmix
+  server: iijjp.mggl.wang
+  port: 35791
+  udp: true
+  type: anytls
+  password: 9e98496a-0036-4cc6-8302-3929c29ba772
+  sni: www.apple.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 17 - netmix
+  server: 104.21.70.228
+  port: 443
   udp: true
   type: vless
-  uuid: c325206e-0f0c-4472-9d76-43e9b9b2ef63
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 18 - netmix
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: 8199228b-e84b-42a2-9268-e400391e483a
+  tls: true
+  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 44 - netmix
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 2949e720-4588-4edc-8642-ff2b7b368c78
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 45 - netmix
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 30b40928-f431-4c83-bfed-44f1243d16ff
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 46 - netmix
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 01e7eda0-cd5a-4415-b42d-0dc4a7598cf9
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 47 - netmix
+      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+- name: 🇯🇵 日本 (Japan) 19 - netmix
   server: 142.91.101.39
   port: 627
   udp: true
@@ -612,12 +205,12 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇯🇵 日本 (Japan) 48 - netmix
+- name: 🇯🇵 日本 (Japan) 20 - netmix
   server: 142.91.101.39
   port: 627
   udp: true
   type: vless
-  uuid: 50f7f0fe-32be-4d5a-9432-095160ff7775
+  uuid: e27ffb19-314e-449b-ac9b-44b28cf50ef5
   tls: true
   servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
   skip-cert-verify: false
@@ -627,93 +220,6 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 49 - netmix
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 3f87daa8-3af8-40a0-b655-127911e008dc
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 50 - netmix
-  server: 129.151.64.169
-  port: 31867
-  udp: true
-  type: vless
-  uuid: 0ff1bcdb-8dcc-4b05-93df-09f028330184
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 51 - netmix
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 23b385cf-02c3-4df8-8402-11f1916418cd
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 52 - netmix
-  server: 104.16.10.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 53 - netmix
-  server: 129.151.64.169
-  port: 31867
-  udp: true
-  type: vless
-  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 54 - netmix
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 168.138.43.75
 proxy-groups:
 - name: PROXIES
   type: select
@@ -739,40 +245,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 18 - netmix
   - 🇯🇵 日本 (Japan) 19 - netmix
   - 🇯🇵 日本 (Japan) 20 - netmix
-  - 🇯🇵 日本 (Japan) 21 - netmix
-  - 🇯🇵 日本 (Japan) 22 - netmix
-  - 🇯🇵 日本 (Japan) 23 - netmix
-  - 🇯🇵 日本 (Japan) 24 - netmix
-  - 🇯🇵 日本 (Japan) 25 - netmix
-  - 🇯🇵 日本 (Japan) 26 - netmix
-  - 🇯🇵 日本 (Japan) 27 - netmix
-  - 🇯🇵 日本 (Japan) 28 - netmix
-  - 🇯🇵 日本 (Japan) 29 - netmix
-  - 🇯🇵 日本 (Japan) 30 - netmix
-  - 🇯🇵 日本 (Japan) 31 - netmix
-  - 🇯🇵 日本 (Japan) 32 - netmix
-  - 🇯🇵 日本 (Japan) 33 - netmix
-  - 🇯🇵 日本 (Japan) 34 - netmix
-  - 🇯🇵 日本 (Japan) 35 - netmix
-  - 🇯🇵 日本 (Japan) 36 - netmix
-  - 🇯🇵 日本 (Japan) 37 - netmix
-  - 🇯🇵 日本 (Japan) 38 - netmix
-  - 🇯🇵 日本 (Japan) 39 - netmix
-  - 🇯🇵 日本 (Japan) 40 - netmix
-  - 🇯🇵 日本 (Japan) 41 - netmix
-  - 🇯🇵 日本 (Japan) 42 - netmix
-  - 🇯🇵 日本 (Japan) 43 - netmix
-  - 🇯🇵 日本 (Japan) 44 - netmix
-  - 🇯🇵 日本 (Japan) 45 - netmix
-  - 🇯🇵 日本 (Japan) 46 - netmix
-  - 🇯🇵 日本 (Japan) 47 - netmix
-  - 🇯🇵 日本 (Japan) 48 - netmix
-  - 🇯🇵 日本 (Japan) 49 - netmix
-  - 🇯🇵 日本 (Japan) 50 - netmix
-  - 🇯🇵 日本 (Japan) 51 - netmix
-  - 🇯🇵 日本 (Japan) 52 - netmix
-  - 🇯🇵 日本 (Japan) 53 - netmix
-  - 🇯🇵 日本 (Japan) 54 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -798,39 +270,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 18 - netmix
   - 🇯🇵 日本 (Japan) 19 - netmix
   - 🇯🇵 日本 (Japan) 20 - netmix
-  - 🇯🇵 日本 (Japan) 21 - netmix
-  - 🇯🇵 日本 (Japan) 22 - netmix
-  - 🇯🇵 日本 (Japan) 23 - netmix
-  - 🇯🇵 日本 (Japan) 24 - netmix
-  - 🇯🇵 日本 (Japan) 25 - netmix
-  - 🇯🇵 日本 (Japan) 26 - netmix
-  - 🇯🇵 日本 (Japan) 27 - netmix
-  - 🇯🇵 日本 (Japan) 28 - netmix
-  - 🇯🇵 日本 (Japan) 29 - netmix
-  - 🇯🇵 日本 (Japan) 30 - netmix
-  - 🇯🇵 日本 (Japan) 31 - netmix
-  - 🇯🇵 日本 (Japan) 32 - netmix
-  - 🇯🇵 日本 (Japan) 33 - netmix
-  - 🇯🇵 日本 (Japan) 34 - netmix
-  - 🇯🇵 日本 (Japan) 35 - netmix
-  - 🇯🇵 日本 (Japan) 36 - netmix
-  - 🇯🇵 日本 (Japan) 37 - netmix
-  - 🇯🇵 日本 (Japan) 38 - netmix
-  - 🇯🇵 日本 (Japan) 39 - netmix
-  - 🇯🇵 日本 (Japan) 40 - netmix
-  - 🇯🇵 日本 (Japan) 41 - netmix
-  - 🇯🇵 日本 (Japan) 42 - netmix
-  - 🇯🇵 日本 (Japan) 43 - netmix
-  - 🇯🇵 日本 (Japan) 44 - netmix
-  - 🇯🇵 日本 (Japan) 45 - netmix
-  - 🇯🇵 日本 (Japan) 46 - netmix
-  - 🇯🇵 日本 (Japan) 47 - netmix
-  - 🇯🇵 日本 (Japan) 48 - netmix
-  - 🇯🇵 日本 (Japan) 49 - netmix
-  - 🇯🇵 日本 (Japan) 50 - netmix
-  - 🇯🇵 日本 (Japan) 51 - netmix
-  - 🇯🇵 日本 (Japan) 52 - netmix
-  - 🇯🇵 日本 (Japan) 53 - netmix
-  - 🇯🇵 日本 (Japan) 54 - netmix
 rules:
 - MATCH,PROXIES
