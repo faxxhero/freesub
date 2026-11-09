@@ -18,27 +18,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02 - netmix
-  server: no.gacvpn.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mCLTVbcvg_tkaIuGqMVVBV-5d_ftEoLnJHhrCmeLDFk
-    short-id: 08d12dce
-  servername: no.gacvpn.site
-  client-fingerprint: chrome
-- name: 🇮🇱 以色列 (Israel) 03 - netmix
-  server: 64.176.163.182
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
-  skip-cert-verify: false
-- name: 🇮🇱 以色列 (Israel) 04 - netmix
   server: 129.159.156.109
   port: 50160
   udp: true
@@ -53,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - netmix
   - 🇮🇱 以色列 (Israel) 02 - netmix
-  - 🇮🇱 以色列 (Israel) 03 - netmix
-  - 🇮🇱 以色列 (Israel) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - netmix
   - 🇮🇱 以色列 (Israel) 02 - netmix
-  - 🇮🇱 以色列 (Israel) 03 - netmix
-  - 🇮🇱 以色列 (Israel) 04 - netmix
 rules:
 - MATCH,PROXIES
