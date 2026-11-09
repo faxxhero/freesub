@@ -21,6 +21,17 @@ proxies:
   sni: fi1.obxodvpn.us
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03 - netmix
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 04 - netmix
   server: 217.144.188.185
   port: 443
   udp: true
@@ -32,19 +43,19 @@ proxies:
     public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
   servername: www.nordea.fi
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - netmix
-  server: 45.144.234.157
-  port: 14430
+- name: 🇫🇮 芬兰 (Finland) 05 - netmix
+  server: static.207.81.180.157.clients.your-server.de
+  port: 443
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 05 - netmix
-  server: 129.101.102.168
+  uuid: 44285ef8-77e0-4d48-a1fc-e5cf58898f87
+  flow: xtls-rprx-vision
+  tls: true
+  servername: TcpTlsDigikaLa.SavfaSf.iR.
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - netmix
+  server: fi-edge.gacvpn.site
   port: 443
   udp: true
   type: vless
@@ -56,7 +67,7 @@ proxies:
     short-id: c59bb8af70d9db1e
   servername: fi3-edge.gacvpn.site
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - netmix
+- name: 🇫🇮 芬兰 (Finland) 07 - netmix
   server: 146.103.118.189
   port: 443
   udp: true
@@ -65,41 +76,12 @@ proxies:
   tls: true
   servername: nl2.574ck.xyz
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
-- name: 🇫🇮 芬兰 (Finland) 07 - netmix
-  server: 5.129.249.155
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
-    short-id: b9120cd53ffd7bba
-  servername: assets-59.topp-con.xyz
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 08 - netmix
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 09 - netmix
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,8 +94,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - netmix
   - 🇫🇮 芬兰 (Finland) 06 - netmix
   - 🇫🇮 芬兰 (Finland) 07 - netmix
-  - 🇫🇮 芬兰 (Finland) 08 - netmix
-  - 🇫🇮 芬兰 (Finland) 09 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,7 +106,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - netmix
   - 🇫🇮 芬兰 (Finland) 06 - netmix
   - 🇫🇮 芬兰 (Finland) 07 - netmix
-  - 🇫🇮 芬兰 (Finland) 08 - netmix
-  - 🇫🇮 芬兰 (Finland) 09 - netmix
 rules:
 - MATCH,PROXIES

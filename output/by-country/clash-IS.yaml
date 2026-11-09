@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇸 冰岛 (Iceland) 01 - netmix
-  server: workos.com
-  port: 2087
-  udp: true
-  type: trojan
-  password: rCcUZvD97ziq
-  sni: raYAn10-cvZkqYla-t2.rAYan-10.wORkers.deV
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-- name: 🇮🇸 冰岛 (Iceland) 02 - netmix
   server: 93.95.226.159
   port: 28150
   udp: true
@@ -26,20 +15,18 @@ proxies:
     public-key: KQW_o2BlCjMC8aH5lkNkO_rmMCAUykQIQCCIIehhsAo
     short-id: '06'
   servername: google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇸 冰岛 (Iceland) 01 - netmix
-  - 🇮🇸 冰岛 (Iceland) 02 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇸 冰岛 (Iceland) 01 - netmix
-  - 🇮🇸 冰岛 (Iceland) 02 - netmix
 rules:
 - MATCH,PROXIES

@@ -26,6 +26,20 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - netmix",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
       "server": "217.144.188.185",
       "server_port": 443,
       "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
@@ -46,22 +60,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
+      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
+      "server": "static.207.81.180.157.clients.your-server.de",
+      "server_port": 443,
+      "uuid": "44285ef8-77e0-4d48-a1fc-e5cf58898f87",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "TcpTlsDigikaLa.SavfaSf.iR.",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
-      "server": "129.101.102.168",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - netmix",
+      "server": "fi-edge.gacvpn.site",
       "server_port": 443,
       "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
       "flow": "xtls-rprx-vision",
@@ -81,7 +98,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - netmix",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - netmix",
       "server": "146.103.118.189",
       "server_port": 443,
       "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
@@ -91,7 +108,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -101,43 +118,6 @@
           "Host": "nl2.574ck.xyz"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - netmix",
-      "server": "5.129.249.155",
-      "server_port": 443,
-      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-59.topp-con.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU",
-          "short_id": "b9120cd53ffd7bba"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - netmix",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "8ca123a8-720b-47c5-bd0c-637431418b09",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 09 - netmix",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "8ca123a8-720b-47c5-bd0c-637431418b09",
-      "security": "auto"
     },
     {
       "type": "selector",
@@ -150,9 +130,7 @@
         "🇫🇮 芬兰 (Finland) 04 - netmix",
         "🇫🇮 芬兰 (Finland) 05 - netmix",
         "🇫🇮 芬兰 (Finland) 06 - netmix",
-        "🇫🇮 芬兰 (Finland) 07 - netmix",
-        "🇫🇮 芬兰 (Finland) 08 - netmix",
-        "🇫🇮 芬兰 (Finland) 09 - netmix"
+        "🇫🇮 芬兰 (Finland) 07 - netmix"
       ]
     },
     {
@@ -165,9 +143,7 @@
         "🇫🇮 芬兰 (Finland) 04 - netmix",
         "🇫🇮 芬兰 (Finland) 05 - netmix",
         "🇫🇮 芬兰 (Finland) 06 - netmix",
-        "🇫🇮 芬兰 (Finland) 07 - netmix",
-        "🇫🇮 芬兰 (Finland) 08 - netmix",
-        "🇫🇮 芬兰 (Finland) 09 - netmix"
+        "🇫🇮 芬兰 (Finland) 07 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
