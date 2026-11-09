@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - netmix
+  server: www.visa.com
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
+  tls: true
+  servername: hk.zhaoqing.city
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: hk.zhaoqing.city
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
   server: dog-hk.kunlun01dns.com
   port: 21018
   udp: true
@@ -12,7 +27,7 @@ proxies:
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
   server: 202.146.222.89
   port: 443
   udp: true
@@ -20,34 +35,22 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
-  server: 209.33.160.122
-  port: 39098
-  udp: true
-  type: vless
-  uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
-  servername: dash.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16113
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
   server: 152.32.254.68
   port: 5010
@@ -59,30 +62,16 @@ proxies:
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
-  server: 47.244.120.197
-  port: 36703
-  udp: true
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: google.com
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
-  server: 165.154.63.139
-  port: 443
+  server: 209.33.160.122
+  port: 39098
   udp: true
   type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
+    public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
+  servername: dash.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -96,7 +85,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 06 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 07 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,6 +97,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 06 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 07 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
 rules:
 - MATCH,PROXIES

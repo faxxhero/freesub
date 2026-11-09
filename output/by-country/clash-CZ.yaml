@@ -5,17 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - netmix
+  server: 129.101.103.211
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg
+    short-id: 53d0d0611a
+  servername: de2.gacvpn.site
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 02 - netmix
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
+  uuid: d84c13b2-c2b9-4a7c-838f-05ac09ee422e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: bbcab8fa80a3
-  servername: www.microsoft.com
+    short-id: 2a2ce9e42980
+  servername: www.mozilla.org
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -23,11 +36,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - netmix
+  - 🇨🇿 捷克 (Czech) 02 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - netmix
+  - 🇨🇿 捷克 (Czech) 02 - netmix
 rules:
 - MATCH,PROXIES

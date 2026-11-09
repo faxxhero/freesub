@@ -4,8 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇸 冰岛 (Iceland) 01 - netmix",
+      "server": "workos.com",
+      "server_port": 2087,
+      "password": "rCcUZvD97ziq",
+      "tls": {
+        "enabled": true,
+        "server_name": "raYAn10-cvZkqYla-t2.rAYan-10.wORkers.deV",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "raYAn10-cvZkqYla-t2.rAYan-10.wORkers.deV"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇸 冰岛 (Iceland) 02 - netmix",
       "server": "93.95.226.159",
       "server_port": 28150,
       "uuid": "b4e69d67-9d41-417c-b465-ebf1591fb792",
@@ -14,7 +37,7 @@
         "server_name": "google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -28,14 +51,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇸 冰岛 (Iceland) 01 - netmix"
+        "🇮🇸 冰岛 (Iceland) 01 - netmix",
+        "🇮🇸 冰岛 (Iceland) 02 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇸 冰岛 (Iceland) 01 - netmix"
+        "🇮🇸 冰岛 (Iceland) 01 - netmix",
+        "🇮🇸 冰岛 (Iceland) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
