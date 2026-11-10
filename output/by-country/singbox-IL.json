@@ -45,7 +45,7 @@
       "tls": {
         "enabled": true,
         "server_name": "exploreeducationsectoropportunitiestodayandadvancecareers.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {

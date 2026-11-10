@@ -4,15 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
-  server: dog-hk.kunlun01dns.com
-  port: 21019
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix
   server: 58.152.81.104
   port: 443
   udp: true
@@ -25,29 +17,37 @@ proxies:
   udp-relay-mode: native
   alpn:
   - h3
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
-  server: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
+  server: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
-  sni: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
-  skip-cert-verify: false
+  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  sni: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
 rules:
 - MATCH,PROXIES

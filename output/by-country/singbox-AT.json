@@ -33,35 +33,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 04 - netmix",
-      "server": "vena.xvanta.online",
-      "server_port": 443,
-      "uuid": "b3e8320f-dbf6-423f-8f86-c3c5d663467f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "vena.xvanta.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4vN6lpdXLv0wGwYmcrC58O0updFdEBGtrsat0XVRSiY",
-          "short_id": "7330f22a41fb280a"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - netmix",
         "🇦🇹 奥地利 (Austria) 02 - netmix",
-        "🇦🇹 奥地利 (Austria) 03 - netmix",
-        "🇦🇹 奥地利 (Austria) 04 - netmix"
+        "🇦🇹 奥地利 (Austria) 03 - netmix"
       ]
     },
     {
@@ -70,8 +48,7 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - netmix",
         "🇦🇹 奥地利 (Austria) 02 - netmix",
-        "🇦🇹 奥地利 (Austria) 03 - netmix",
-        "🇦🇹 奥地利 (Austria) 04 - netmix"
+        "🇦🇹 奥地利 (Austria) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

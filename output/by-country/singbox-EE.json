@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - netmix",
-      "server": "201.8.64.7",
+      "server": "5.253.177.41",
       "server_port": 443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "uuid": "59cb1f5b-51d6-4a03-aca8-3ac34bb848d9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nlll.obxodvpn.us",
-        "insecure": true
+        "server_name": "es-01.file-rkat.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JPFGvwqbUaVMgakxgnG6DSibIlVclpXmj1kC3kJJKVA",
+          "short_id": "6116985f1613ff84"
+        }
       }
     },
     {

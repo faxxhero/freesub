@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 匈牙利 (Hungary) 01 - netmix
-  server: 172.67.131.125
-  port: 2083
+- name: 🇲🇩 摩尔多瓦 (Moldova) 01 - netmix
+  server: groupbackoff.ratethatrestaurant.org
+  port: 443
   udp: true
   type: vless
-  uuid: f418674e-f518-4318-8ff9-e10000000046
+  uuid: c1208c5a-2350-4506-affd-fc41b4319286
   tls: true
-  servername: smart-edge-424.arti98399-1905.workers.dev
+  servername: groupbackoff.ratethatrestaurant.org
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sync
+    path: /media/ws/
     headers:
-      Host: smart-edge-424.arti98399-1905.workers.dev
+      Host: groupbackoff.ratethatrestaurant.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 匈牙利 (Hungary) 01 - netmix
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 匈牙利 (Hungary) 01 - netmix
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - netmix
 rules:
 - MATCH,PROXIES
