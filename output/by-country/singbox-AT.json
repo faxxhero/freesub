@@ -12,8 +12,16 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇦🇹 奥地利 (Austria) 02 - netmix",
+      "server": "152.53.1.57",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - netmix",
       "server": "154.47.19.225",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -26,22 +34,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - netmix",
-      "server": "fdat.titun.su",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - netmix",
+      "server": "vena.xvanta.online",
       "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "uuid": "b3e8320f-dbf6-423f-8f86-c3c5d663467f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "banket-restoran.su",
+        "server_name": "vena.xvanta.online",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
+          "public_key": "4vN6lpdXLv0wGwYmcrC58O0updFdEBGtrsat0XVRSiY",
+          "short_id": "7330f22a41fb280a"
         }
       }
     },
@@ -52,7 +60,8 @@
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - netmix",
         "🇦🇹 奥地利 (Austria) 02 - netmix",
-        "🇦🇹 奥地利 (Austria) 03 - netmix"
+        "🇦🇹 奥地利 (Austria) 03 - netmix",
+        "🇦🇹 奥地利 (Austria) 04 - netmix"
       ]
     },
     {
@@ -61,7 +70,8 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - netmix",
         "🇦🇹 奥地利 (Austria) 02 - netmix",
-        "🇦🇹 奥地利 (Austria) 03 - netmix"
+        "🇦🇹 奥地利 (Austria) 03 - netmix",
+        "🇦🇹 奥地利 (Austria) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

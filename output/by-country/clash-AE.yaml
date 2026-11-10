@@ -12,23 +12,38 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 02 - netmix
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
   server: 151.241.19.29
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
-  server: hy2.aspidnet.xyz
+- name: 🇦🇪 阿联酋 (UAE) 04 - netmix
+  server: 104.21.108.4
   port: 443
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
+  type: vless
+  uuid: fa45096d-bed0-ad80-c773-23c300000018
+  tls: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
   skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - netmix
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - netmix
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -39,7 +54,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - netmix
+- name: 🇦🇪 阿联酋 (UAE) 06 - netmix
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -60,6 +75,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
   - 🇦🇪 阿联酋 (UAE) 05 - netmix
+  - 🇦🇪 阿联酋 (UAE) 06 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,5 +86,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
   - 🇦🇪 阿联酋 (UAE) 05 - netmix
+  - 🇦🇪 阿联酋 (UAE) 06 - netmix
 rules:
 - MATCH,PROXIES

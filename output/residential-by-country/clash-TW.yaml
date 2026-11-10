@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
-  server: dog-tw.kunlun01dns.com
-  port: 21037
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
   server: dddz-1-x.473221.xyz
   port: 13239
   udp: true
@@ -25,7 +17,7 @@ proxies:
     short-id: 8591c4d31f59a60d
   servername: updates.cdn-apple.com
   client-fingerprint: edge
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
   server: 59.125.69.23
   port: 443
   udp: true
@@ -45,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
 rules:
 - MATCH,PROXIES

@@ -12,6 +12,13 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - netmix
+  server: 152.53.1.57
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
+- name: 🇦🇹 奥地利 (Austria) 03 - netmix
   server: 154.47.19.225
   port: 1270
   udp: true
@@ -22,19 +29,19 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇦🇹 奥地利 (Austria) 03 - netmix
-  server: fdat.titun.su
+- name: 🇦🇹 奥地利 (Austria) 04 - netmix
+  server: vena.xvanta.online
   port: 443
   udp: true
   type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  uuid: b3e8320f-dbf6-423f-8f86-c3c5d663467f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: banket-restoran.su
-  client-fingerprint: firefox
+    public-key: 4vN6lpdXLv0wGwYmcrC58O0updFdEBGtrsat0XVRSiY
+    short-id: 7330f22a41fb280a
+  servername: vena.xvanta.online
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +50,7 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - netmix
   - 🇦🇹 奥地利 (Austria) 02 - netmix
   - 🇦🇹 奥地利 (Austria) 03 - netmix
+  - 🇦🇹 奥地利 (Austria) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +59,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - netmix
   - 🇦🇹 奥地利 (Austria) 02 - netmix
   - 🇦🇹 奥地利 (Austria) 03 - netmix
+  - 🇦🇹 奥地利 (Austria) 04 - netmix
 rules:
 - MATCH,PROXIES

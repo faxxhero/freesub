@@ -5,30 +5,107 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - netmix
-  server: 202.146.222.89
-  port: 443
+  server: 104.18.15.19
+  port: 8443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
+  type: vless
+  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
+  tls: true
+  servername: hk.zhaoqing.city
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: hk.zhaoqing.city
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
-  server: 202.146.222.29
-  port: 443
+  server: 104.18.14.19
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
+  tls: true
+  servername: hk.zhaoqing.city
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: hk.zhaoqing.city
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
+  server: 152.32.254.68
+  port: 5010
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%e2%89%a1%c6%92%c3%a7
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16114
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
+  server: 43.161.193.181
+  port: 443
+  udp: true
+  type: vless
+  uuid: 280f4d33-69fb-4f0d-a4c3-fe0bf841009f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nf9eFC0yVVO-peA-wmZ1EEIwAaSstK2JN3tJV0WNJQE
+    short-id: 8c994df3c4e175a4
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16113
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  server: 101.32.187.182
+  port: 10898
+  udp: true
+  type: vmess
+  uuid: b6b14ef7-a769-406f-9df7-31790ff7a920
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - netmix
   server: 162.19.192.89
   port: 16632
   udp: true
@@ -41,16 +118,19 @@ proxies:
     path: /
     headers:
       Host: 0606f25bbb646de3feadb8d23c1c6217.mobgslb.tbcache.com
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
-  server: 152.32.254.68
-  port: 5010
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - netmix
+  server: 57d89862-2f3e-4b36-bf20-bf5d302eeaa6.69290827-acbd-4035-94cd-4d1fa0997bb8.byteprivatelink.com
+  port: 443
   udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+  type: vless
+  uuid: 7f6ee01e-c243-4c84-9cf2-7d8ecc0da202
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rV6kc94WuI-e8k94iQ8l8SHTvTynTjtd8io7LDByEnc
+    short-id: e5b9c61d
+  servername: tva1.sinaimg.cn
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +141,13 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 04 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 05 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 07 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +158,12 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 04 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 05 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 07 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 09 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 11 - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 12 - netmix
 rules:
 - MATCH,PROXIES
