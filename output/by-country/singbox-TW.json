@@ -14,24 +14,24 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-      "server": "160.187.100.109",
+      "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "160.187.100.109",
+        "server_name": "https%3A",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
-      "server": "103.115.109.49",
+      "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/WangCai2",
+        "server_name": "off",
         "insecure": true
       }
     },
@@ -56,6 +56,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - netmix",
+      "server": "23.95.72.244",
+      "server_port": 54387,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.adidas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qqb-vrDIPSrFIithw497zM-LmGUEcTo-dqAjhHi6kyY",
+          "short_id": "f810"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -63,7 +84,8 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 04 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 05 - netmix"
       ]
     },
     {
@@ -73,7 +95,8 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
         "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 04 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 05 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
