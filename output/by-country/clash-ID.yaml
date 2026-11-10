@@ -4,28 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇷 阿根廷 (Argentina) 01 - netmix
-  server: eu90.cdn77.icu
-  port: 20005
+- name: 🇮🇩 印尼 (Indonesia) 01 - netmix
+  server: in001.zestapp778.com
+  port: 57353
   udp: true
   type: vless
-  uuid: 2f094d48-7186-47ca-9e57-e977bbac3b08
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
-  reality-opts:
-    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-  servername: eu64.cdn77.icu
+  servername: in001.zestapp778.com
+  skip-cert-verify: false
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇷 阿根廷 (Argentina) 01 - netmix
+  - 🇮🇩 印尼 (Indonesia) 01 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇷 阿根廷 (Argentina) 01 - netmix
+  - 🇮🇩 印尼 (Indonesia) 01 - netmix
 rules:
 - MATCH,PROXIES

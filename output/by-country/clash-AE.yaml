@@ -5,13 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - netmix
-  server: 151.241.19.36
+  server: 151.241.19.29
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 02 - netmix
+  server: 151.241.19.36
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
+  server: 104.143.223.236
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 6538f5c3-5b01-4956-a8e6-47688c01c42e
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 04 - netmix
   server: 130.49.161.70
   port: 443
   udp: true
@@ -21,14 +37,16 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - netmix
-  server: 151.241.19.29
-  port: 19999
+- name: 🇦🇪 阿联酋 (UAE) 05 - netmix
+  server: 95.174.68.188
+  port: 14430
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 04 - netmix
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇦🇪 阿联酋 (UAE) 06 - netmix
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -39,17 +57,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - netmix
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +67,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
   - 🇦🇪 阿联酋 (UAE) 05 - netmix
+  - 🇦🇪 阿联酋 (UAE) 06 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,5 +78,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
   - 🇦🇪 阿联酋 (UAE) 05 - netmix
+  - 🇦🇪 阿联酋 (UAE) 06 - netmix
 rules:
 - MATCH,PROXIES

@@ -4,29 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - netmix",
-      "server": "109.104.155.131",
-      "server_port": 2053,
-      "uuid": "bb3723d7-462e-442c-9472-496750476f45",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dir-br1.filesapp.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MwJoFytMWCLdwCCt0cSTM8L6ZzYKxlZbFMML_3nnJms",
-          "short_id": "508118120e886b5a"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇧🇷 巴西 (Brazil) 02 - netmix",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - netmix",
       "server": "103.88.232.55",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -42,16 +21,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - netmix",
-        "🇧🇷 巴西 (Brazil) 02 - netmix"
+        "🇧🇷 巴西 (Brazil) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - netmix",
-        "🇧🇷 巴西 (Brazil) 02 - netmix"
+        "🇧🇷 巴西 (Brazil) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

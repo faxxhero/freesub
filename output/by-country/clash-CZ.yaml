@@ -18,6 +18,19 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 02 - netmix
+  server: 212.102.38.25
+  port: 443
+  udp: true
+  type: vless
+  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
+    short-id: e90360ec7cc61b20
+  servername: udemy.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 03 - netmix
   server: 216.106.191.201
   port: 10303
   udp: true
@@ -30,19 +43,19 @@ proxies:
     short-id: 6aa50b0cc8d23464
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 03 - netmix
+- name: 🇨🇿 捷克 (Czech) 04 - netmix
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
+  uuid: ed042cf7-efe0-49bd-848b-8d7e655111ff
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 87f895f23064
-  servername: www.techradar.com
-  client-fingerprint: firefox
+    short-id: 1036b2383b72
+  servername: www.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +64,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - netmix
   - 🇨🇿 捷克 (Czech) 02 - netmix
   - 🇨🇿 捷克 (Czech) 03 - netmix
+  - 🇨🇿 捷克 (Czech) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +73,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - netmix
   - 🇨🇿 捷克 (Czech) 02 - netmix
   - 🇨🇿 捷克 (Czech) 03 - netmix
+  - 🇨🇿 捷克 (Czech) 04 - netmix
 rules:
 - MATCH,PROXIES
