@@ -14,6 +14,19 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
   server: 23.95.72.244
+  port: 5463
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw
+    short-id: be33ecc1975c
+  servername: api.adidas.com
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
+  server: 23.95.72.244
   port: 5462
   udp: true
   type: vless
@@ -32,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
 rules:
 - MATCH,PROXIES

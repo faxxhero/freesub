@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix
-  server: 58.152.81.104
+  server: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
   port: 443
   udp: true
   type: tuic
@@ -13,26 +13,47 @@ proxies:
   password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
   sni: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
   skip-cert-verify: false
-  congestion-controller: cubic
+  congestion-controller: bbr
   udp-relay-mode: native
   alpn:
   - h3
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
   server: dog-hk.kunlun01dns.com
-  port: 21021
+  port: 21041
   udp: true
   type: vmess
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
-  server: 20247da3-tmm5c0-u1dz9j-12hj8.hk3.hyhuawei.com
+  server: ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
-  sni: 20247da3-tmm5c0-u1dz9j-12hj8.hk3.hyhuawei.com
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  sni: ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix
+  server: 23.95.72.244
+  port: 10000
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw
+    short-id: 99aa2eb4f2c77af5
+  servername: sellercentral.amazon.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +62,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +72,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix
 rules:
 - MATCH,PROXIES

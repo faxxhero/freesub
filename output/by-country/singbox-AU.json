@@ -4,45 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - netmix",
-      "server": "188.114.97.6",
-      "server_port": 80,
-      "uuid": "6faeb6a0-5055-4e4b-8fb1-ffd77e57aefa",
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "somersby.pt.r3xxe.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - netmix",
-      "server": "104.18.155.229",
-      "server_port": 443,
-      "uuid": "42026ed0-7d74-4585-8e46-0fe6aa4d665a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.genflix.co.id.r3xxe.eu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "www.genflix.co.id.r3xxe.eu.cc"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - netmix",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - netmix",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -54,6 +17,34 @@
       "obfs": {
         "type": "salamander",
         "password": "850a3fb1cd33a28f12d837578ae1a2e7"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - netmix",
+      "server": "au.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "au.tronsg.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - netmix",
+      "server": "45.63.30.142",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "45.63.30.142",
+        "insecure": true
       }
     },
     {
@@ -73,18 +64,23 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 05 - netmix",
-      "server": "45.63.30.142",
+      "server": "50.6.54.163",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2vd1kmOeZpjjDpgN75FMhwFRzPjNfzvLoUM5LlLrm2U",
+          "short_id": "26b26357bfcd59a1"
         }
       }
     },
@@ -110,27 +106,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 07 - netmix",
-      "server": "50.6.54.163",
-      "server_port": 443,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "2vd1kmOeZpjjDpgN75FMhwFRzPjNfzvLoUM5LlLrm2U",
-          "short_id": "26b26357bfcd59a1"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -140,8 +115,7 @@
         "🇦🇺 澳大利亚 (Australia) 03 - netmix",
         "🇦🇺 澳大利亚 (Australia) 04 - netmix",
         "🇦🇺 澳大利亚 (Australia) 05 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 06 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 07 - netmix"
+        "🇦🇺 澳大利亚 (Australia) 06 - netmix"
       ]
     },
     {
@@ -153,8 +127,7 @@
         "🇦🇺 澳大利亚 (Australia) 03 - netmix",
         "🇦🇺 澳大利亚 (Australia) 04 - netmix",
         "🇦🇺 澳大利亚 (Australia) 05 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 06 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 07 - netmix"
+        "🇦🇺 澳大利亚 (Australia) 06 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
