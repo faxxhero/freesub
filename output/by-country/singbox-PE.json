@@ -5,26 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇺 匈牙利 (Hungary) 01 - netmix",
-      "server": "212.41.9.190",
-      "server_port": 2092,
-      "uuid": "db57c865-2318-4fd2-8aea-e8ba58ec696d",
+      "tag": "🇵🇪 秘鲁 (Peru) 01 - netmix",
+      "server": "23.95.72.244",
+      "server_port": 50122,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "s3.storage.selcloud.ru",
+        "server_name": "api.adidas.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "NpMdrqPyU_2aCYH0ZgkWV80iwX50McteLYXzpgZbrjw",
-          "short_id": "8e3ba54f"
+          "public_key": "a9XavLXaCvwAvMpMWT3XlJ_MvXDd41cA7Mp-DiN6WCo",
+          "short_id": "79c25836ab103a48"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "cas-hu"
       }
     },
     {
@@ -32,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 匈牙利 (Hungary) 01 - netmix"
+        "🇵🇪 秘鲁 (Peru) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 匈牙利 (Hungary) 01 - netmix"
+        "🇵🇪 秘鲁 (Peru) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

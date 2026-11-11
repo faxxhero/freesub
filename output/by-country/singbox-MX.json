@@ -41,20 +41,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇲🇽 墨西哥 (Mexico) 04 - netmix",
-      "server": "mx001.zestapp778.com",
-      "server_port": 15083,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "mx001.zestapp778.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇲🇽 墨西哥 (Mexico) 05 - netmix",
+      "tag": "🇲🇽 墨西哥 (Mexico) 04 - netmix",
       "server": "45.134.9.133",
       "server_port": 8443,
       "uuid": "a6d20e79-d326-42c1-bc20-f4cecc6dc42d",
@@ -66,6 +54,18 @@
       "transport": {
         "type": "ws",
         "path": "/vless/"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇲🇽 墨西哥 (Mexico) 05 - netmix",
+      "server": "mx001.zestapp778.com",
+      "server_port": 15083,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "mx001.zestapp778.com",
+        "insecure": false
       }
     },
     {

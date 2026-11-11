@@ -32,14 +32,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇲🇽 墨西哥 (Mexico) 04 - netmix
-  server: mx001.zestapp778.com
-  port: 15083
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: mx001.zestapp778.com
-  skip-cert-verify: true
-- name: 🇲🇽 墨西哥 (Mexico) 05 - netmix
   server: 45.134.9.133
   port: 8443
   udp: true
@@ -51,6 +43,14 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
+- name: 🇲🇽 墨西哥 (Mexico) 05 - netmix
+  server: mx001.zestapp778.com
+  port: 15083
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: mx001.zestapp778.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

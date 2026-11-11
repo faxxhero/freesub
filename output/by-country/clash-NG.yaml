@@ -16,7 +16,7 @@ proxies:
     public-key: nRsOy4cUKjMIi5k8HtdfY9qnrm8fMe031yi56zMtzSg
     short-id: 2eae70bfca3776cc
   servername: api.adidas.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
