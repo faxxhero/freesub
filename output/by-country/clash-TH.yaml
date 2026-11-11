@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - netmix
-  server: 119.46.51.45
-  port: 37515
-  udp: true
-  type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 02 - netmix
   server: 38.60.233.126
   port: 33079
   udp: true
@@ -20,7 +12,7 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: th001.zestapp778.com
   skip-cert-verify: false
-- name: 🇹🇭 泰国 (Thailand) 03 - netmix
+- name: 🇹🇭 泰国 (Thailand) 02 - netmix
   server: 23.95.72.244
   port: 5458
   udp: true
@@ -33,32 +25,14 @@ proxies:
     short-id: ba80520852fb9c25
   servername: api.adidas.com
   client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 04 - netmix
-  server: 23.95.72.244
-  port: 5459
+- name: 🇹🇭 泰国 (Thailand) 03 - netmix
+  server: 119.46.51.45
+  port: 37515
   udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Von3W6smD_9vmKScjCG9ex6xw4_sG9MFfBk-9zbrbzs
-    short-id: 3fdc9f533b3fb068
-  servername: api.adidas.com
-  client-fingerprint: firefox
-- name: 🇹🇭 泰国 (Thailand) 05 - netmix
-  server: zfapi.zalolink.com
-  port: 11802
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
-    short-id: 6c84fbac2d
-  servername: psstatic.cdn.bcebos.com
-  client-fingerprint: ios
+  type: vmess
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,8 +41,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - netmix
   - 🇹🇭 泰国 (Thailand) 02 - netmix
   - 🇹🇭 泰国 (Thailand) 03 - netmix
-  - 🇹🇭 泰国 (Thailand) 04 - netmix
-  - 🇹🇭 泰国 (Thailand) 05 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,7 +49,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - netmix
   - 🇹🇭 泰国 (Thailand) 02 - netmix
   - 🇹🇭 泰国 (Thailand) 03 - netmix
-  - 🇹🇭 泰国 (Thailand) 04 - netmix
-  - 🇹🇭 泰国 (Thailand) 05 - netmix
 rules:
 - MATCH,PROXIES

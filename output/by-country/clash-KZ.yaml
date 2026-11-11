@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
+  server: www.pdnczone.com
+  port: 2087
+  udp: true
+  type: trojan
+  password: 80d4cb87-ac70-e074-bc82-6313d2d1b539
+  sni: ayhanmansur-zedmeli.kdns.fr
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZXJaQklLRUh1R0UiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjowfQ==
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
   server: 212.41.9.190
   port: 2093
   udp: true
@@ -19,19 +30,44 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: cas-kz
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
-  server: 38.107.234.57
-  port: 80
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
+  server: 185.246.155.91
+  port: 10403
   udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
+  type: vless
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko
+    short-id: 6859f5b59e55aa30
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
+  server: 176.120.21.23
+  port: 443
+  udp: true
+  type: vless
+  uuid: 83cc8226-1087-49ae-aac3-1f157ddc57b4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OAU9917HKYqvTO59c9SvAL9BBh8v85tfJhw5PMg-2iU
+    short-id: c4d4cf50489d51
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
+  server: 109.248.170.119
+  port: 13447
+  udp: true
+  type: vless
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  tls: true
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +75,9 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +85,8 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
 rules:
 - MATCH,PROXIES

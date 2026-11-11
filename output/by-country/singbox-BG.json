@@ -7,33 +7,33 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - netmix",
       "server": "213.183.63.60",
-      "server_port": 9028,
-      "method": "aes-256-cfb",
-      "password": "9eeJ2fwnZA5Fxgz8"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - netmix",
-      "server": "213.183.63.60",
-      "server_port": 9029,
-      "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - netmix",
-      "server": "213.183.63.60",
       "server_port": 9098,
       "method": "aes-256-cfb",
       "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - netmix",
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - netmix",
+      "server": "213.183.63.60",
+      "server_port": 9049,
+      "method": "aes-256-cfb",
+      "password": "PRBf4BS2HvJqtWxY"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - netmix",
       "server": "213.183.63.60",
-      "server_port": 9064,
+      "server_port": 9085,
       "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "shadowsocks",
@@ -47,25 +47,38 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - netmix",
       "server": "213.183.63.60",
-      "server_port": 9066,
+      "server_port": 9061,
       "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - netmix",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "server": "131.123.43.103",
+      "server_port": 443,
+      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "bg2.gacvpn.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg",
+          "short_id": "1f8bab7ad81089f2"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - netmix",
       "server": "213.183.63.60",
-      "server_port": 9085,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "vless",
@@ -110,46 +123,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - netmix",
-      "server": "191.44.112.170.sslip.io",
-      "server_port": 443,
-      "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
-      "tls": {
-        "enabled": true,
-        "server_name": "orbylume.my.to",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tvpn-trojan/bg",
-        "headers": {
-          "Host": "orbylume.my.to"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 12 - netmix",
-      "server": "bg2.gacvpn.site",
-      "server_port": 443,
-      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "bg2.gacvpn.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg",
-          "short_id": "1f8bab7ad81089f2"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -163,9 +136,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 07 - netmix",
         "🇧🇬 保加利亚 (Bulgaria) 08 - netmix",
         "🇧🇬 保加利亚 (Bulgaria) 09 - netmix",
-        "🇧🇬 保加利亚 (Bulgaria) 10 - netmix",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - netmix",
-        "🇧🇬 保加利亚 (Bulgaria) 12 - netmix"
+        "🇧🇬 保加利亚 (Bulgaria) 10 - netmix"
       ]
     },
     {
@@ -181,9 +152,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 07 - netmix",
         "🇧🇬 保加利亚 (Bulgaria) 08 - netmix",
         "🇧🇬 保加利亚 (Bulgaria) 09 - netmix",
-        "🇧🇬 保加利亚 (Bulgaria) 10 - netmix",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - netmix",
-        "🇧🇬 保加利亚 (Bulgaria) 12 - netmix"
+        "🇧🇬 保加利亚 (Bulgaria) 10 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

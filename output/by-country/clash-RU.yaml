@@ -5,39 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - netmix
-  server: 90.156.203.62
-  port: 5112
+  server: 201.24.121.243
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
+  type: vless
+  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
+  tls: true
+  servername: kk-ru24a1.testkknegr.online
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vlgrpc
 - name: 🇷🇺 俄罗斯 (Russia) 02 - netmix
-  server: 89.105.218.143
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - netmix
-  server: novonl.subv.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - netmix
   server: 89.105.218.138
   port: 443
   udp: true
@@ -50,7 +30,7 @@ proxies:
     short-id: 428ef87fd47a3a32
   servername: golos.mail.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - netmix
+- name: 🇷🇺 俄罗斯 (Russia) 03 - netmix
   server: 50.7.227.77
   port: 443
   udp: true
@@ -61,15 +41,41 @@ proxies:
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
-  servername: 50.7.227.77
-  client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 06 - netmix
-  server: 38.60.223.125
-  port: 13108
+  servername: bizorg.su
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - netmix
+  server: 89.105.218.143
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: golos.mail.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - netmix
+  server: 130.49.189.158
+  port: 43558
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+- name: 🇷🇺 俄罗斯 (Russia) 06 - netmix
+  server: 185.215.184.49
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 07 - netmix
   server: 193.233.253.180
   port: 8444
@@ -85,26 +91,13 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 08 - netmix
-  server: fduknew.titun.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: bizorg.su
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09 - netmix
-  server: 46.17.47.58
+  server: 185.22.153.117
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 10 - netmix
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 09 - netmix
   server: 200.169.179.233
   port: 443
   udp: true
@@ -117,7 +110,56 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 10 - netmix
+  server: 185.215.184.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 11 - netmix
+  server: 46.17.47.58
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇷🇺 俄罗斯 (Russia) 12 - netmix
+  server: 176.108.245.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87c35d3a-36f1-fade-90b7-af60506efbb8
+  tls: true
+  servername: tfusq-ru-40sb.fade.mom
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 13 - netmix
+  server: vps2.nemnogogo.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
+  tls: true
+  servername: vps2.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 14 - netmix
+  server: 38.60.223.125
+  port: 13108
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+- name: 🇷🇺 俄罗斯 (Russia) 15 - netmix
   server: 92.243.66.79
   port: 443
   udp: true
@@ -130,71 +172,6 @@ proxies:
     short-id: 8d03c10b6a874a9c
   servername: ru-mow.probe.geomyip.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 12 - netmix
-  server: 201.24.121.243
-  port: 443
-  udp: true
-  type: vless
-  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
-  tls: true
-  servername: kk-ru24a1.testkknegr.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 13 - netmix
-  server: 185.178.208.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
-  tls: true
-  servername: mbr.rkn-pediki.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /session
-    headers:
-      Host: mbr.rkn-pediki.site
-- name: 🇷🇺 俄罗斯 (Russia) 14 - netmix
-  server: neshka2.kpt99.uk
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38de3363-7945-402e-9a9b-6f2f9015a44e
-  flow: xtls-rprx-vision
-  tls: true
-  servername: neshka2.kpt99.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 15 - netmix
-  server: lt.krevetkabs111.net
-  port: 14443
-  udp: true
-  type: vless
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-  tls: true
-  servername: lt.krevetkabs111.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/generate
-    headers:
-      Host: lt.krevetkabs111.net
-- name: 🇷🇺 俄罗斯 (Russia) 16 - netmix
-  server: allba.connect-qik.uk
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38de3363-7945-402e-9a9b-6f2f9015a44e
-  flow: xtls-rprx-vision
-  tls: true
-  servername: allba.connect-qik.uk
-  skip-cert-verify: false
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -215,7 +192,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 13 - netmix
   - 🇷🇺 俄罗斯 (Russia) 14 - netmix
   - 🇷🇺 俄罗斯 (Russia) 15 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 16 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -236,6 +212,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 13 - netmix
   - 🇷🇺 俄罗斯 (Russia) 14 - netmix
   - 🇷🇺 俄罗斯 (Russia) 15 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 16 - netmix
 rules:
 - MATCH,PROXIES
