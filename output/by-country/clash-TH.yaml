@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - netmix
-  server: th001.zestapp778.com
+  server: 38.60.233.126
   port: 33079
   udp: true
   type: trojan
@@ -13,18 +13,13 @@ proxies:
   sni: th001.zestapp778.com
   skip-cert-verify: false
 - name: 🇹🇭 泰国 (Thailand) 02 - netmix
-  server: 23.95.72.244
-  port: 5459
+  server: 8.213.209.1
+  port: 18918
   udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Von3W6smD_9vmKScjCG9ex6xw4_sG9MFfBk-9zbrbzs
-    short-id: 3fdc9f533b3fb068
-  servername: api.adidas.com
-  client-fingerprint: firefox
+  type: vmess
+  uuid: 6d64789a-4d5e-4ef7-c9ac-0fc543b4e635
+  alterId: 0
+  cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 03 - netmix
   server: 23.95.72.244
   port: 5458
@@ -38,6 +33,19 @@ proxies:
     short-id: ba80520852fb9c25
   servername: api.adidas.com
   client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 04 - netmix
+  server: zfapi.zalolink.com
+  port: 11802
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+    short-id: 6c84fbac2d
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +54,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - netmix
   - 🇹🇭 泰国 (Thailand) 02 - netmix
   - 🇹🇭 泰国 (Thailand) 03 - netmix
+  - 🇹🇭 泰国 (Thailand) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +63,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - netmix
   - 🇹🇭 泰国 (Thailand) 02 - netmix
   - 🇹🇭 泰国 (Thailand) 03 - netmix
+  - 🇹🇭 泰国 (Thailand) 04 - netmix
 rules:
 - MATCH,PROXIES

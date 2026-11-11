@@ -20,8 +20,29 @@
       "security": "auto"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇲🇽 墨西哥 (Mexico) 03 - netmix",
+      "server": "147.78.1.253",
+      "server_port": 443,
+      "uuid": "39a390af-1f90-4c0e-89e4-4e2023732e4b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TefL2KtNcNLPmUY8TKlu5pA7ffipqgmbBN6gpyzyklk",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇲🇽 墨西哥 (Mexico) 04 - netmix",
       "server": "mx001.zestapp778.com",
       "server_port": 15083,
       "password": "5t6i121em5lkmsmk",
@@ -33,23 +54,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇽 墨西哥 (Mexico) 04 - netmix",
-      "server": "88.210.37.174",
-      "server_port": 10103,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇲🇽 墨西哥 (Mexico) 05 - netmix",
+      "server": "45.134.9.133",
+      "server_port": 8443,
+      "uuid": "a6d20e79-d326-42c1-bc20-f4cecc6dc42d",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_ARuUG0vgXer4ywV6w9DEfFc9Bgq1zn2mi7YAW2-rAk",
-          "short_id": "2e70c4b2af549ea0"
-        }
+        "server_name": "ul-mexico1.09vpn.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
       }
     },
     {
@@ -60,7 +76,8 @@
         "🇲🇽 墨西哥 (Mexico) 01 - netmix",
         "🇲🇽 墨西哥 (Mexico) 02 - netmix",
         "🇲🇽 墨西哥 (Mexico) 03 - netmix",
-        "🇲🇽 墨西哥 (Mexico) 04 - netmix"
+        "🇲🇽 墨西哥 (Mexico) 04 - netmix",
+        "🇲🇽 墨西哥 (Mexico) 05 - netmix"
       ]
     },
     {
@@ -70,7 +87,8 @@
         "🇲🇽 墨西哥 (Mexico) 01 - netmix",
         "🇲🇽 墨西哥 (Mexico) 02 - netmix",
         "🇲🇽 墨西哥 (Mexico) 03 - netmix",
-        "🇲🇽 墨西哥 (Mexico) 04 - netmix"
+        "🇲🇽 墨西哥 (Mexico) 04 - netmix",
+        "🇲🇽 墨西哥 (Mexico) 05 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

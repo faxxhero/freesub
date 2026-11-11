@@ -4,9 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇻🇳 越南 (Vietnam) 01 - netmix",
-      "server": "idh1kxx1-api.mateflora.com",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16256,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 02 - netmix",
+      "server": "154.44.24.25",
       "server_port": 51279,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
@@ -15,7 +23,7 @@
         "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,18 +33,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 03 - netmix",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - netmix"
+        "🇻🇳 越南 (Vietnam) 01 - netmix",
+        "🇻🇳 越南 (Vietnam) 02 - netmix",
+        "🇻🇳 越南 (Vietnam) 03 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - netmix"
+        "🇻🇳 越南 (Vietnam) 01 - netmix",
+        "🇻🇳 越南 (Vietnam) 02 - netmix",
+        "🇻🇳 越南 (Vietnam) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

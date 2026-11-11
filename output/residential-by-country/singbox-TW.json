@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix",
-      "server": "161.114.15.215",
-      "server_port": 30502,
-      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix",
       "server": "23.95.72.244",
       "server_port": 5463,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
@@ -42,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix",
       "server": "23.95.72.244",
       "server_port": 5462,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
@@ -58,6 +42,22 @@
           "enabled": true,
           "public_key": "biUjzfAfxrbE_4GNfOCbSG-YW5tDUlqZTeyhJb6OG30",
           "short_id": "4b7a508fcd3ef1a1"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix",
+      "server": "161.114.15.215",
+      "server_port": 30502,
+      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },

@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - netmix
-  server: 161.114.15.215
-  port: 30502
-  udp: true
-  type: trojan
-  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
   server: 23.95.72.244
   port: 5463
   udp: true
@@ -25,7 +17,7 @@ proxies:
     short-id: be33ecc1975c
   servername: api.adidas.com
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
   server: 23.95.72.244
   port: 5462
   udp: true
@@ -38,6 +30,14 @@ proxies:
     short-id: 4b7a508fcd3ef1a1
   servername: api.adidas.com
   client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
+  server: 161.114.15.215
+  port: 30502
+  udp: true
+  type: trojan
+  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
+  sni: www.cloudflare.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
