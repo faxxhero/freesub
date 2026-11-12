@@ -4,17 +4,17 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇰 巴基斯坦 (Pakistan) 01 - netmix
+- name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
   server: 23.95.72.244
-  port: 51482
+  port: 56846
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZqVGy04LsOyGwbiA_CLWVFXGqMs6vteg-wGaYZ1BbzA
-    short-id: b785a30c236e93
+    public-key: 3emmWrmF-Ng86iKFuT6MiCFoWup4RSSqxQxRLR8TqB8
+    short-id: 88298adaffd382
   servername: api.adidas.com
   client-fingerprint: chrome
 proxy-groups:
@@ -22,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇵🇰 巴基斯坦 (Pakistan) 01 - netmix
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇰 巴基斯坦 (Pakistan) 01 - netmix
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
 rules:
 - MATCH,PROXIES

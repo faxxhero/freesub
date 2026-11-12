@@ -5,28 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - netmix
+  server: 91.149.237.29
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: CrQILX5MAK5dplfn
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - netmix
-  server: vpn-hk-004.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: vk.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
   server: 202.146.222.29
@@ -34,29 +35,24 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүҹү
+  sni: https://t.me/wangcai2üá
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
-  server: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
-  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
-  sni: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
-  server: hk3.wawojk.dpdns.org
-  port: 51314
+  server: dog-hk.kunlun01dns.com
+  port: 21018
   udp: true
-  type: vless
-  uuid: affd72c9-0870-4c92-b6e5-af7d0e06313e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VWY3lvh8l3OoKnhln5nIzmxAG0Imp9arXMK6nbsGVB4
-    short-id: 0ee643ab
-  servername: www.asus.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
   server: doghkzf.zalolink.com
   port: 28675
@@ -71,29 +67,6 @@ proxies:
   servername: www.lamer.com.hk
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
-  server: 23.95.72.244
-  port: 6697
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qeuzgTUkTLMVZZ3AclsA1_Qn_xX9NFDzuNzJnotcMWY
-    short-id: e718c0495c85dab2
-  servername: www.aboutamazon.sg
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
   server: 103.172.116.201
   port: 10103
   udp: true
@@ -106,18 +79,44 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - netmix
   server: 23.95.72.244
-  port: 48741
+  port: 58712
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: uBxSs6VRu8YTdOqtrj07gqmX_0rlzKoGIkIm-qAFFG0
-    short-id: fe92059c14
+    public-key: en2L9xxQOv2w4eD0sxqu3eOFGnqOxZLWuR9sFqBDdAM
+    short-id: f266fd3d4e
   servername: api.adidas.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - netmix
+  server: 23.95.72.244
+  port: 58715
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xhQQ393yiOwgfp2JzIu0Qfg-5oG3M5Y71mBmI0WM9kU
+    short-id: eab17137bf1d2bad
+  servername: api.adidas.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - netmix
+  server: 23.95.72.244
+  port: 6697
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qeuzgTUkTLMVZZ3AclsA1_Qn_xX9NFDzuNzJnotcMWY
+    short-id: e718c0495c85dab2
+  servername: www.aboutamazon.sg
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 12 - netmix
   server: 23.95.72.244

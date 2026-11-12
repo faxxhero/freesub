@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇦 沙特 (Saudi Arabia) 01 - netmix
-  server: 81.208.170.142
-  port: 1500
+- name: 🇭🇺 匈牙利 (Hungary) 01 - netmix
+  server: 84.38.184.87
+  port: 11443
   udp: true
   type: vless
-  uuid: e332f028-d343-5b44-8016-b3130f39e133
+  uuid: a628c583-24a8-4ce5-98ad-c6458abf1cc4
   tls: true
   reality-opts:
-    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
-    short-id: 775eb6408888248e
-  servername: www.ebay.com
+    public-key: 4HG_QcSHTdYtSbcTQczOW4JAHQfjc37UCLKHSps_t3w
+    short-id: 39cdc017
+  servername: s3.storage.selcloud.ru
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: ''
+    grpc-service-name: cas-hu
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇦 沙特 (Saudi Arabia) 01 - netmix
+  - 🇭🇺 匈牙利 (Hungary) 01 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇦 沙特 (Saudi Arabia) 01 - netmix
+  - 🇭🇺 匈牙利 (Hungary) 01 - netmix
 rules:
 - MATCH,PROXIES

@@ -4,38 +4,38 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - netmix",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/clashv8",
-        "insecure": true
-      }
+      "server": "91.149.237.29",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "CrQILX5MAK5dplfn"
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - netmix",
-      "server": "vpn-hk-004.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "152.32.254.68",
+      "server_port": 5010,
+      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-hk-004.fastervpn.world",
-        "insecure": true
+        "server_name": "nas.aizhzo.com",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - netmix",
-      "server": "202.146.222.174",
+      "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
+        "server_name": "vk.com",
         "insecure": true
       }
     },
@@ -47,42 +47,29 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2рҹүҹү",
+        "server_name": "https://t.me/wangcai2üá",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - netmix",
-      "server": "88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com",
+      "server": "202.146.222.174",
       "server_port": 443,
-      "password": "92bd8c68-6434-11ee-b644-f23c91cfbbc9",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com",
+        "server_name": "202.146.222.174",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 - netmix",
-      "server": "hk3.wawojk.dpdns.org",
-      "server_port": 51314,
-      "uuid": "affd72c9-0870-4c92-b6e5-af7d0e06313e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.asus.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VWY3lvh8l3OoKnhln5nIzmxAG0Imp9arXMK6nbsGVB4",
-          "short_id": "0ee643ab"
-        }
-      }
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21018,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
     },
     {
       "type": "vless",
@@ -108,43 +95,6 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 08 - netmix",
-      "server": "23.95.72.244",
-      "server_port": 6697,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.aboutamazon.sg",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qeuzgTUkTLMVZZ3AclsA1_Qn_xX9NFDzuNzJnotcMWY",
-          "short_id": "e718c0495c85dab2"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - netmix",
-      "server": "152.32.254.68",
-      "server_port": 5010,
-      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - netmix",
       "server": "103.172.116.201",
       "server_port": 10103,
       "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
@@ -165,9 +115,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - netmix",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - netmix",
       "server": "23.95.72.244",
-      "server_port": 48741,
+      "server_port": 58712,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -179,8 +129,50 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "uBxSs6VRu8YTdOqtrj07gqmX_0rlzKoGIkIm-qAFFG0",
-          "short_id": "fe92059c14"
+          "public_key": "en2L9xxQOv2w4eD0sxqu3eOFGnqOxZLWuR9sFqBDdAM",
+          "short_id": "f266fd3d4e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - netmix",
+      "server": "23.95.72.244",
+      "server_port": 58715,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.adidas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xhQQ393yiOwgfp2JzIu0Qfg-5oG3M5Y71mBmI0WM9kU",
+          "short_id": "eab17137bf1d2bad"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - netmix",
+      "server": "23.95.72.244",
+      "server_port": 6697,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.aboutamazon.sg",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qeuzgTUkTLMVZZ3AclsA1_Qn_xX9NFDzuNzJnotcMWY",
+          "short_id": "e718c0495c85dab2"
         }
       }
     },
