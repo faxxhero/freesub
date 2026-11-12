@@ -36,17 +36,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 04 - netmix
-  server: 62.93.166.184
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05 - netmix
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -57,23 +46,14 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 06 - netmix
+- name: 🇸🇪 瑞典 (Sweden) 05 - netmix
   server: 95.143.196.97
   port: 443
   udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
+  type: hysteria2
+  password: 769f34f0-1500-488f-b414-03bc90666502
+  sni: se.mimowhat.online
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 07 - netmix
-  server: 16.171.159.75
-  port: 16751
-  udp: true
-  type: vmess
-  uuid: 5b2e2e5f-1302-4d65-ab39-27f6f0ca5562
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,8 +64,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - netmix
   - 🇸🇪 瑞典 (Sweden) 04 - netmix
   - 🇸🇪 瑞典 (Sweden) 05 - netmix
-  - 🇸🇪 瑞典 (Sweden) 06 - netmix
-  - 🇸🇪 瑞典 (Sweden) 07 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,7 +74,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - netmix
   - 🇸🇪 瑞典 (Sweden) 04 - netmix
   - 🇸🇪 瑞典 (Sweden) 05 - netmix
-  - 🇸🇪 瑞典 (Sweden) 06 - netmix
-  - 🇸🇪 瑞典 (Sweden) 07 - netmix
 rules:
 - MATCH,PROXIES
