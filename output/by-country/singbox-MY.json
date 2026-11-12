@@ -7,27 +7,6 @@
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - netmix",
       "server": "23.95.72.244",
-      "server_port": 50174,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tmlOT7vvbKwBuucRKRm33TqocfvHfgDAstvca5Yy-gU",
-          "short_id": "8b10495bdb"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - netmix",
-      "server": "23.95.72.244",
       "server_port": 50684,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
@@ -50,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - netmix",
-        "🇲🇾 马来西亚 (Malaysia) 02 - netmix"
+        "🇲🇾 马来西亚 (Malaysia) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - netmix",
-        "🇲🇾 马来西亚 (Malaysia) 02 - netmix"
+        "🇲🇾 马来西亚 (Malaysia) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

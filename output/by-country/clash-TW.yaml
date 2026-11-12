@@ -17,30 +17,17 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https%3A
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - netmix
-  server: vpn-tw-002.fastervpn.world
+  server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
+  sni: 'off'
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - netmix
-  server: 23.95.72.244
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: E6XD__G0KCmX1LibW4qwafvYXID5zci_bcwKueuhEA8
-    short-id: 807c3fa325465508
-  servername: business.amazon.co.uk
-  client-fingerprint: edge
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - netmix
   server: 35.206.207.63
   port: 443
   udp: true
@@ -53,7 +40,7 @@ proxies:
     short-id: ba50b4f2
   servername: dl.google.com
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - netmix
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - netmix
   server: 83.147.13.74
   port: 8443
   udp: true
@@ -65,7 +52,7 @@ proxies:
     short-id: 4ad2e4e660550e43
   servername: github.githubassets.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - netmix
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - netmix
   server: 23.95.72.244
   port: 54387
   udp: true
@@ -78,6 +65,19 @@ proxies:
     short-id: f810
   servername: api.adidas.com
   client-fingerprint: qq
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - netmix
+  server: 59.125.69.23
+  port: 443
+  udp: true
+  type: vless
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  tls: true
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
 proxy-groups:
 - name: PROXIES
   type: select

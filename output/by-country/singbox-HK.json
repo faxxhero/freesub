@@ -6,14 +6,26 @@
     {
       "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - netmix",
-      "server": "185.22.153.117",
-      "server_port": 18443,
+      "server": "213.176.92.148",
+      "server_port": 40647,
       "method": "aes-256-gcm",
-      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
+      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - netmix",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - netmix",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -29,32 +41,8 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - netmix",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 - netmix",
       "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/clashv8",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - netmix",
-      "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
@@ -64,30 +52,21 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - netmix",
-      "server": "23.95.72.244",
-      "server_port": 6697,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - netmix",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.aboutamazon.sg",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qeuzgTUkTLMVZZ3AclsA1_Qn_xX9NFDzuNzJnotcMWY",
-          "short_id": "e718c0495c85dab2"
-        }
+        "server_name": "https%253a%252f%252ft.me%252fwangcai2%25d1%2580%25d2%25b9%25d2%25af%25d1%2591%25d1%2580%25d2%25b9%25d2%25af%25d1%2596",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - netmix",
-      "server": "39.109.111.23",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - netmix",
+      "server": "doghkzf.zalolink.com",
       "server_port": 28675,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
@@ -96,7 +75,7 @@
         "server_name": "www.lamer.com.hk",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -106,21 +85,9 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - netmix",
-      "server": "site.ddddd.site",
-      "server_port": 36031,
-      "password": "b80fb17e-082a-40ce-9e38-ee2f92c1a6ea",
-      "tls": {
-        "enabled": true,
-        "server_name": "virtual.ubuntu24.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - netmix",
-      "server": "103.172.116.201",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - netmix",
+      "server": "103.172.116.191",
       "server_port": 10103,
       "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
       "flow": "xtls-rprx-vision",
@@ -140,91 +107,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - netmix",
-      "server": "23.95.72.244",
-      "server_port": 58713,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pDLX46ucLtF5q13vH65lR_2ztY0TNzuAvoHc_MybS0Q",
-          "short_id": "715335e6264a13"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - netmix",
-      "server": "23.95.72.244",
-      "server_port": 5452,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5QrrG8JTvX0hemy-OiCGVr5lr0QKzukwr5JlEIgQ7z8",
-          "short_id": "a2fdcebfb3a6c8"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - netmix",
-      "server": "23.95.72.244",
-      "server_port": 5451,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qryP-M3vNPOjAVs90y0mjF03PfhJsMboTJCLxLoiKRU",
-          "short_id": "63f1a2ab88f9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 13 - netmix",
-      "server": "23.95.72.244",
-      "server_port": 58715,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xhQQ393yiOwgfp2JzIu0Qfg-5oG3M5Y71mBmI0WM9kU",
-          "short_id": "eab17137bf1d2bad"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 14 - netmix",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - netmix",
       "server": "23.95.72.244",
       "server_port": 58712,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
@@ -245,7 +128,70 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 15 - netmix",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - netmix",
+      "server": "23.95.72.244",
+      "server_port": 5451,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.adidas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qryP-M3vNPOjAVs90y0mjF03PfhJsMboTJCLxLoiKRU",
+          "short_id": "63f1a2ab88f9"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - netmix",
+      "server": "23.95.72.244",
+      "server_port": 58715,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.adidas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xhQQ393yiOwgfp2JzIu0Qfg-5oG3M5Y71mBmI0WM9kU",
+          "short_id": "eab17137bf1d2bad"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - netmix",
+      "server": "23.95.72.244",
+      "server_port": 58713,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.adidas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pDLX46ucLtF5q13vH65lR_2ztY0TNzuAvoHc_MybS0Q",
+          "short_id": "715335e6264a13"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - netmix",
       "server": "23.95.72.244",
       "server_port": 48741,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
@@ -266,32 +212,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 16 - netmix",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 13 - netmix",
       "server": "23.95.72.244",
-      "server_port": 9443,
+      "server_port": 6697,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.eero.com",
+        "server_name": "www.aboutamazon.sg",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "hY7qJ-wCkHHGHgsWYPxVX67YkyNgAexTG3kyWhifpy0",
-          "short_id": "e1b7e52b41b7c0a7"
+          "public_key": "qeuzgTUkTLMVZZ3AclsA1_Qn_xX9NFDzuNzJnotcMWY",
+          "short_id": "e718c0495c85dab2"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 17 - netmix",
-      "server": "213.176.92.148",
-      "server_port": 40647,
-      "method": "aes-256-gcm",
-      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
     },
     {
       "type": "selector",
@@ -310,11 +248,7 @@
         "🇭🇰 中国香港 (Hong Kong) 10 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 11 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 12 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 13 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 14 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 15 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 16 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 17 - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 13 - netmix"
       ]
     },
     {
@@ -333,11 +267,7 @@
         "🇭🇰 中国香港 (Hong Kong) 10 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 11 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 12 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 13 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 14 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 15 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 16 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 17 - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 13 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

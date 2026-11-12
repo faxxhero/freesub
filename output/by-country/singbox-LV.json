@@ -4,24 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - netmix",
-      "server": "185.135.86.175",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "server": "104.165.205.42",
+      "server_port": 8443,
+      "password": "54d2f622-fd71-4f5f-8813-832b68f4ca3b",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtestmark.com",
+        "insecure": false
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - netmix",
-      "server": "185.135.86.175",
-      "server_port": 9007,
-      "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - netmix",
       "server": "185.135.86.175",
       "server_port": 9094,
       "method": "aes-256-cfb",
@@ -29,39 +25,31 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - netmix",
+      "server": "185.135.86.175",
+      "server_port": 9007,
+      "method": "aes-256-cfb",
+      "password": "kSPmvwdFzGMMW5pY"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - netmix",
       "server": "185.135.86.175",
-      "server_port": 9086,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - netmix",
       "server": "185.135.86.175",
-      "server_port": 9034,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - netmix",
-      "server": "185.135.86.175",
-      "server_port": 9017,
-      "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - netmix",
-      "server": "185.135.86.175",
-      "server_port": 9036,
-      "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - netmix",
       "server": "185.135.86.175",
       "server_port": 9033,
       "method": "aes-256-cfb",
@@ -69,15 +57,39 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - netmix",
+      "server": "185.135.86.175",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - netmix",
+      "server": "185.135.86.175",
+      "server_port": 9034,
+      "method": "aes-256-cfb",
+      "password": "Yg4MbdXFQ9HFFVY6"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - netmix",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "HAVAdE3nXhqA5nHp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - netmix",
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - netmix",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - netmix",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -87,7 +99,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -98,7 +110,79 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - netmix",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 12 - netmix",
+      "server": "n1.topingr.ir",
+      "server_port": 443,
+      "uuid": "961913fb-dc88-446f-8356-3fde5b51d7f7",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn2.zovip2.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v3/pulse",
+        "headers": {
+          "Host": "cdn2.zovip2.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 13 - netmix",
+      "server": "n4.topingr.ir",
+      "server_port": 443,
+      "uuid": "961913fb-dc88-446f-8356-3fde5b51d7f7",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.zovip2.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v3/pulse",
+        "headers": {
+          "Host": "static.zovip2.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 14 - netmix",
+      "server": "45.38.143.210",
+      "server_port": 30584,
+      "uuid": "cebc5f19-18d9-48e6-9029-fb4b04caf393",
+      "tls": {
+        "enabled": true,
+        "server_name": "m.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y",
+          "short_id": "67ece882d65d0f1a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 15 - netmix",
       "server": "195.123.213.28",
       "server_port": 443,
       "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
@@ -118,18 +202,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 12 - netmix",
-      "server": "104.165.205.42",
-      "server_port": 8443,
-      "password": "54d2f622-fd71-4f5f-8813-832b68f4ca3b",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtestmark.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -145,7 +217,10 @@
         "🇱🇻 拉脱维亚 (Latvia) 09 - netmix",
         "🇱🇻 拉脱维亚 (Latvia) 10 - netmix",
         "🇱🇻 拉脱维亚 (Latvia) 11 - netmix",
-        "🇱🇻 拉脱维亚 (Latvia) 12 - netmix"
+        "🇱🇻 拉脱维亚 (Latvia) 12 - netmix",
+        "🇱🇻 拉脱维亚 (Latvia) 13 - netmix",
+        "🇱🇻 拉脱维亚 (Latvia) 14 - netmix",
+        "🇱🇻 拉脱维亚 (Latvia) 15 - netmix"
       ]
     },
     {
@@ -163,7 +238,10 @@
         "🇱🇻 拉脱维亚 (Latvia) 09 - netmix",
         "🇱🇻 拉脱维亚 (Latvia) 10 - netmix",
         "🇱🇻 拉脱维亚 (Latvia) 11 - netmix",
-        "🇱🇻 拉脱维亚 (Latvia) 12 - netmix"
+        "🇱🇻 拉脱维亚 (Latvia) 12 - netmix",
+        "🇱🇻 拉脱维亚 (Latvia) 13 - netmix",
+        "🇱🇻 拉脱维亚 (Latvia) 14 - netmix",
+        "🇱🇻 拉脱维亚 (Latvia) 15 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

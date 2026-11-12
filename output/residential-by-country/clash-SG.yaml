@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇦 MA 01 - netmix
+- name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
   server: 23.95.72.244
-  port: 55854
+  port: 56846
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: -dI886DcXmuCdKxWIEkJ8irTmumm1YDZSZ-M-J6lW0M
-    short-id: 18bc6e27d744
+    public-key: 3emmWrmF-Ng86iKFuT6MiCFoWup4RSSqxQxRLR8TqB8
+    short-id: 88298adaffd382
   servername: api.adidas.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇦 MA 01 - netmix
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇦 MA 01 - netmix
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
 rules:
 - MATCH,PROXIES

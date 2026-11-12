@@ -19,46 +19,25 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/WangCai2🇨🇳",
+        "server_name": "https%3A",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
-      "server": "vpn-tw-002.fastervpn.world",
+      "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "off",
         "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
-      "server": "23.95.72.244",
-      "server_port": 4443,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "business.amazon.co.uk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "E6XD__G0KCmX1LibW4qwafvYXID5zci_bcwKueuhEA8",
-          "short_id": "807c3fa325465508"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - netmix",
       "server": "35.206.207.63",
       "server_port": 443,
       "uuid": "58543a42-b17d-4cc8-8b54-b5465ebaae89",
@@ -79,7 +58,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - netmix",
       "server": "83.147.13.74",
       "server_port": 8443,
       "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
@@ -99,7 +78,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 07 - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 - netmix",
       "server": "23.95.72.244",
       "server_port": 54387,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
@@ -116,6 +95,26 @@
           "public_key": "qqb-vrDIPSrFIithw497zM-LmGUEcTo-dqAjhHi6kyY",
           "short_id": "f810"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 07 - netmix",
+      "server": "59.125.69.23",
+      "server_port": 443,
+      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ty986gfazs.cainiaohub.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
       }
     },
     {

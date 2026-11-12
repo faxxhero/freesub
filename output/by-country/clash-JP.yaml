@@ -5,47 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - netmix
-  server: 158.101.140.31
-  port: 1985
-  udp: true
-  type: hysteria2
-  password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
-  sni: 158.101.140.31
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 02 - netmix
-  server: 168.110.16.191
-  port: 30000
-  udp: true
-  type: hysteria2
-  password: Hy2OracleTokyo2026Owner
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 03 - netmix
-  server: 161.33.152.237
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 30f5e94a-3e13-4270-9f90-60827bef6671
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 443-443,8443-8443
-- name: 🇯🇵 日本 (Japan) 04 - netmix
-  server: 141.147.160.26
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 30f5e94a-3e13-4270-9f90-60827bef6671
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 443-443,8443-8443
-- name: 🇯🇵 日本 (Japan) 05 - netmix
-  server: 168.138.205.100
+  server: jpa.123069.xyz
   port: 53758
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 06 - netmix
+- name: 🇯🇵 日本 (Japan) 02 - netmix
   server: 168.110.45.41
   port: 21443
   udp: true
@@ -53,29 +19,44 @@ proxies:
   password: pnKhsG5E1hH1VglAXmT9cq1
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 07 - netmix
-  server: 141.11.139.102
-  port: 32515
+- name: 🇯🇵 日本 (Japan) 03 - netmix
+  server: 8.211.175.236
+  port: 8443
   udp: true
-  type: vmess
-  uuid: 081dbf5a-d8b6-40c8-96f8-3c4ca9f50442
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 08 - netmix
-  server: 152.69.195.67
-  port: 47878
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 04 - netmix
+  server: 158.101.140.31
+  port: 1985
   udp: true
-  type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- name: 🇯🇵 日本 (Japan) 09 - netmix
+  type: hysteria2
+  password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
+  sni: 158.101.140.31
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 05 - netmix
   server: 168.110.16.191
-  port: 8444
+  port: 30000
   udp: true
-  type: trojan
+  type: hysteria2
   password: Hy2OracleTokyo2026Owner
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - netmix
+- name: 🇯🇵 日本 (Japan) 06 - netmix
+  server: 103.75.118.228
+  port: 11452
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 07 - netmix
   server: 168.110.45.41
   port: 23444
   udp: true
@@ -88,46 +69,7 @@ proxies:
     short-id: 119c9e68498f5900
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 11 - netmix
-  server: 103.75.118.228
-  port: 12683
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 12 - netmix
-  server: 23.95.72.244
-  port: 10443
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jfovzfzTWrXvEA5q6T48LN_x958wijkRCAtpYSxoSio
-    short-id: f0cce225780a02dc
-  servername: music.amazon.com.au
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 13 - netmix
-  server: 3.114.220.22
-  port: 10583
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 14 - netmix
+- name: 🇯🇵 日本 (Japan) 08 - netmix
   server: 23.95.72.244
   port: 7443
   udp: true
@@ -140,13 +82,67 @@ proxies:
     short-id: b5f8108aacdd2b6f
   servername: business.amazon.com.au
   client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 15 - netmix
+- name: 🇯🇵 日本 (Japan) 09 - netmix
+  server: 152.69.195.67
+  port: 47878
+  udp: true
+  type: vless
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- name: 🇯🇵 日本 (Japan) 10 - netmix
   server: 84.247.155.196
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 11 - netmix
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇯🇵 日本 (Japan) 12 - netmix
+  server: ootd-jp.xiaokeyun.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3d84bbdc-9616-4e89-9ded-c9bff9db8dc7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oEgpqVVhvIZpCejedfWU0OqhEnfsGNGEmmds1nzRqEE
+    short-id: 568d60f0
+  servername: v3-default.ixigua.com
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 13 - netmix
+  server: iijjp.mggl.wang
+  port: 35791
+  udp: true
+  type: anytls
+  password: 9e98496a-0036-4cc6-8302-3929c29ba772
+  sni: www.apple.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 14 - netmix
+  server: 168.110.16.191
+  port: 8444
+  udp: true
+  type: trojan
+  password: Hy2OracleTokyo2026Owner
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 15 - netmix
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: '1'
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 16 - netmix
   server: 84.247.155.196
   port: 80
@@ -166,39 +162,38 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 18 - netmix
-  server: 3.114.220.22
-  port: 18007
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 19 - netmix
-  server: 138.3.208.26
-  port: 50160
+- name: 🇯🇵 日本 (Japan) 18 - netmix
+  server: 193.123.160.109
+  port: 8443
   udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: '1'
+  type: trojan
+  password: F3NzMNuYnG7akU2mSlBY
+  sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 20 - netmix
-  server: 168.138.43.75
-  port: 80
+- name: 🇯🇵 日本 (Japan) 19 - netmix
+  server: 141.11.139.102
+  port: 32515
   udp: true
   type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  uuid: 081dbf5a-d8b6-40c8-96f8-3c4ca9f50442
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
+- name: 🇯🇵 日本 (Japan) 20 - netmix
+  server: 212.41.9.190
+  port: 14443
+  udp: true
+  type: vless
+  uuid: db57c865-2318-4fd2-8aea-e8ba58ec696d
+  tls: true
+  reality-opts:
+    public-key: 6ire5xfQhZ2rq-fMvnm_f3AzHOkY0LXBh-3msGfK0jw
+    short-id: be69581b
+  servername: s3.storage.selcloud.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cas-jp
 - name: 🇯🇵 日本 (Japan) 21 - netmix
   server: 23.95.72.244
   port: 55569
@@ -213,6 +208,74 @@ proxies:
   servername: api.adidas.com
   client-fingerprint: safari
 - name: 🇯🇵 日本 (Japan) 22 - netmix
+  server: 43.170.8.95
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 23 - netmix
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: e27ffb19-314e-449b-ac9b-44b28cf50ef5
+  tls: true
+  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+- name: 🇯🇵 日本 (Japan) 24 - netmix
+  server: site.ddddd.site
+  port: 36035
+  udp: true
+  type: anytls
+  password: b80fb17e-082a-40ce-9e38-ee2f92c1a6ea
+  sni: virtual.ubuntu24.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 25 - netmix
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: 3f87daa8-3af8-40a0-b655-127911e008dc
+  tls: true
+  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+- name: 🇯🇵 日本 (Japan) 26 - netmix
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: 50f7f0fe-32be-4d5a-9432-095160ff7775
+  tls: true
+  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+- name: 🇯🇵 日本 (Japan) 27 - netmix
   server: 103.172.116.201
   port: 10403
   udp: true
@@ -225,19 +288,19 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 23 - netmix
-  server: 168.110.48.252
-  port: 10018
+- name: 🇯🇵 日本 (Japan) 28 - netmix
+  server: 111.68.14.18
+  port: 443
   udp: true
   type: vless
-  uuid: d8fc873b-860d-4490-b2f0-300d6ae3c2d3
-  flow: xtls-rprx-vision
+  uuid: f4dc7e38-f861-460b-b1af-d8a5fa141d7b
   tls: true
   reality-opts:
-    public-key: YxoFVB0NhCx4BJCgq5Ey5jdteRU2H2toGa-ZKW5XV3c
-  servername: www.ebay.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 24 - netmix
+    public-key: iPjmjJ-QoIFgm0QumbMLLpT1w9w_HZNqRjtPoFqx7WY
+    short-id: c6e2572e3267
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 29 - netmix
   server: 23.95.72.244
   port: 55568
   udp: true
@@ -250,31 +313,19 @@ proxies:
     short-id: 8e46ebc92990
   servername: api.adidas.com
   client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 25 - netmix
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 26 - netmix
-  server: djj.zjlo.top
-  port: 23169
+- name: 🇯🇵 日本 (Japan) 30 - netmix
+  server: zfapi.zalolink.com
+  port: 43149
   udp: true
   type: vless
-  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 27 - netmix
-  server: 168.110.21.56
-  port: 18453
-  udp: true
-  type: vless
-  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
+  reality-opts:
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -307,6 +358,9 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 25 - netmix
   - 🇯🇵 日本 (Japan) 26 - netmix
   - 🇯🇵 日本 (Japan) 27 - netmix
+  - 🇯🇵 日本 (Japan) 28 - netmix
+  - 🇯🇵 日本 (Japan) 29 - netmix
+  - 🇯🇵 日本 (Japan) 30 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -339,5 +393,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 25 - netmix
   - 🇯🇵 日本 (Japan) 26 - netmix
   - 🇯🇵 日本 (Japan) 27 - netmix
+  - 🇯🇵 日本 (Japan) 28 - netmix
+  - 🇯🇵 日本 (Japan) 29 - netmix
+  - 🇯🇵 日本 (Japan) 30 - netmix
 rules:
 - MATCH,PROXIES

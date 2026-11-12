@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - netmix
   server: 23.95.72.244
-  port: 2096
+  port: 50135
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 71OwuN_2X-et_42RLIteY2parqX2cARuv-718eg_VD4
-    short-id: b88b4ed92599c16a
-  servername: api.amazonalexa.com
-  client-fingerprint: ios
+    public-key: ugirklnmY9hUeY9BQ9rdeVbu29iGblEM8N2_HHA8Rk4
+    short-id: 8cd0eddfb0
+  servername: api.adidas.com
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - netmix
   server: 23.95.72.244
   port: 5455
@@ -32,17 +32,17 @@ proxies:
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 03 (家宽) - netmix
   server: 23.95.72.244
-  port: 50135
+  port: 2096
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ugirklnmY9hUeY9BQ9rdeVbu29iGblEM8N2_HHA8Rk4
-    short-id: 8cd0eddfb0
-  servername: api.adidas.com
-  client-fingerprint: chrome
+    public-key: 71OwuN_2X-et_42RLIteY2parqX2cARuv-718eg_VD4
+    short-id: b88b4ed92599c16a
+  servername: api.amazonalexa.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select

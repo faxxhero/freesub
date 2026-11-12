@@ -11,18 +11,41 @@
       "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 02 - netmix",
+      "server": "23.95.72.244",
+      "server_port": 60013,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.adidas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mcL0jagupr0AWJCb80sHTxhsAgD1xnrpb1bM20UTT0U",
+          "short_id": "31cef3438d"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - netmix"
+        "🇻🇳 越南 (Vietnam) 01 - netmix",
+        "🇻🇳 越南 (Vietnam) 02 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - netmix"
+        "🇻🇳 越南 (Vietnam) 01 - netmix",
+        "🇻🇳 越南 (Vietnam) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
