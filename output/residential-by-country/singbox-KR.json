@@ -4,29 +4,37 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - netmix",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - netmix",
       "server": "23.95.72.244",
-      "server_port": 50135,
+      "server_port": 2096,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "api.adidas.com",
+        "server_name": "api.amazonalexa.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ugirklnmY9hUeY9BQ9rdeVbu29iGblEM8N2_HHA8Rk4",
-          "short_id": "8cd0eddfb0"
+          "public_key": "71OwuN_2X-et_42RLIteY2parqX2cARuv-718eg_VD4",
+          "short_id": "b88b4ed92599c16a"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - netmix",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - netmix",
       "server": "23.95.72.244",
       "server_port": 5455,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
@@ -47,22 +55,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - netmix",
+      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - netmix",
       "server": "23.95.72.244",
-      "server_port": 2096,
+      "server_port": 50135,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "api.amazonalexa.com",
+        "server_name": "api.adidas.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "71OwuN_2X-et_42RLIteY2parqX2cARuv-718eg_VD4",
-          "short_id": "b88b4ed92599c16a"
+          "public_key": "ugirklnmY9hUeY9BQ9rdeVbu29iGblEM8N2_HHA8Rk4",
+          "short_id": "8cd0eddfb0"
         }
       }
     },
@@ -73,7 +81,8 @@
         "auto",
         "🇰🇷 韩国 (South Korea) 01 (家宽) - netmix",
         "🇰🇷 韩国 (South Korea) 02 (家宽) - netmix",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - netmix"
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - netmix",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - netmix"
       ]
     },
     {
@@ -82,7 +91,8 @@
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 (家宽) - netmix",
         "🇰🇷 韩国 (South Korea) 02 (家宽) - netmix",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - netmix"
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - netmix",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

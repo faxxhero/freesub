@@ -10,32 +10,17 @@ proxies:
   udp: true
   type: vless
   uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
-- name: 🇻🇳 越南 (Vietnam) 02 - netmix
-  server: 23.95.72.244
-  port: 60013
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mcL0jagupr0AWJCb80sHTxhsAgD1xnrpb1bM20UTT0U
-    short-id: 31cef3438d
-  servername: api.adidas.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - netmix
-  - 🇻🇳 越南 (Vietnam) 02 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - netmix
-  - 🇻🇳 越南 (Vietnam) 02 - netmix
 rules:
 - MATCH,PROXIES

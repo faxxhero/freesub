@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21041,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
       "server": "20247da3-tmm5c0-u1dz9j-12hj8.hk3.hyhuawei.com",
       "server_port": 443,
       "password": "5acc7a7c-d7ea-11eb-8673-f23c9164ca5d",
@@ -32,59 +16,38 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix",
-      "server": "6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "94d40708-8273-11ea-8fc9-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com",
-        "insecure": false
-      }
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21020,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix",
-      "server": "23.95.72.244",
-      "server_port": 10000,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sellercentral.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw",
-          "short_id": "99aa2eb4f2c77af5"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
         "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix",
         "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

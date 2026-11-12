@@ -5,20 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - netmix
-  server: 162.159.153.4
+  server: 151.245.163.246
   port: 443
   udp: true
   type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: e9e44c8f-44e1-450f-806d-f0dca6d7dc95
+  flow: xtls-rprx-vision
   tls: true
-  servername: rayan-007.maxima.dpdns.org
-  skip-cert-verify: false
+  reality-opts:
+    public-key: yXdCcOXX-Q4ygs18Wa9AYXi69RwZvAvrTaS5zq9CKzY
+    short-id: 8f24b4b6d3d46fa2
+  servername: us-mia2.probe.geomyip.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
 - name: 🇦🇪 阿联酋 (UAE) 02 - netmix
   server: 151.241.19.36
   port: 19999
@@ -33,7 +31,7 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - netmix
@@ -54,26 +52,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06 - netmix
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 07 - netmix
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,8 +62,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
   - 🇦🇪 阿联酋 (UAE) 05 - netmix
-  - 🇦🇪 阿联酋 (UAE) 06 - netmix
-  - 🇦🇪 阿联酋 (UAE) 07 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,7 +72,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
   - 🇦🇪 阿联酋 (UAE) 05 - netmix
-  - 🇦🇪 阿联酋 (UAE) 06 - netmix
-  - 🇦🇪 阿联酋 (UAE) 07 - netmix
 rules:
 - MATCH,PROXIES
