@@ -20,29 +20,22 @@ proxies:
   cipher: aes-256-cfb
   password: 1234!@#$
 - name: 🇰🇷 韩国 (South Korea) 03 - netmix
-  server: 146.56.112.110
-  port: 8888
-  udp: true
-  type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 04 - netmix
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 05 - netmix
   server: 152.70.237.123
   port: 2053
   udp: true
   type: hysteria2
   password: maintell
-  sni: bing.com
+  sni: 152.70.237.123
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - netmix
+- name: 🇰🇷 韩国 (South Korea) 04 - netmix
+  server: 132.226.226.189
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: 132.226.226.189
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - netmix
   server: 43.155.182.152
   port: 443
   udp: true
@@ -55,39 +48,23 @@ proxies:
     short-id: a905935ed2d659fe
   servername: live.douyin.com
   client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 06 - netmix
+  server: 146.56.112.110
+  port: 8888
+  udp: true
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 07 - netmix
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: 132.226.226.189
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - netmix
-  server: 152.69.231.175
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152.69.231.175
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - netmix
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - netmix
   server: 158.247.253.243
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - netmix
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 08 - netmix
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -96,7 +73,23 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 (South Korea) 12 - netmix
+- name: 🇰🇷 韩国 (South Korea) 09 - netmix
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 10 - netmix
+  server: 152.69.231.175
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152.69.231.175
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 11 - netmix
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -108,6 +101,14 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 12 - netmix
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 13 - netmix
   server: 154.90.62.70
   port: 56127

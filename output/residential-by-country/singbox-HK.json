@@ -14,6 +14,18 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
+      "server": "ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "c11ff50c-f582-11ee-94df-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
       "server": "112.120.123.140",
       "server_port": 443,
       "password": "c11ff50c-f582-11ee-94df-f23c9164ca5d",
@@ -24,12 +36,22 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21019,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix"
       ]
     },
     {
@@ -37,7 +59,9 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
+        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

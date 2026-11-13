@@ -18,24 +18,22 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - netmix",
-      "server": "200.102.183.50",
+      "server": "89.105.218.139",
       "server_port": 443,
-      "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
+      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "f2hbck5x3c0g8pl7.cdn.cachefleet.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
+        "server_name": "89.105.218.139",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "short_id": "428ef87fd47a3a32"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "qi8ws15c7jv5q2fa"
       }
     },
     {
@@ -61,55 +59,13 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - netmix",
-      "server": "novonl.subv.ru",
+      "server": "50.7.227.82",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "golos.mail.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - netmix",
-      "server": "185.215.184.54",
-      "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.215.184.54",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - netmix",
-      "server": "185.215.184.50",
-      "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.215.184.50",
+        "server_name": "bizorg.su",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -123,7 +79,59 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - netmix",
+      "server": "185.215.184.86",
+      "server_port": 443,
+      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "185.215.184.86",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "short_id": "428ef87fd47a3a32"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - netmix",
+      "server": "185.22.153.117",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 07 - netmix",
+      "server": "200.102.183.50",
+      "server_port": 443,
+      "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
+      "tls": {
+        "enabled": true,
+        "server_name": "f2hbck5x3c0g8pl7.cdn.cachefleet.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "qi8ws15c7jv5q2fa"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - netmix",
       "server": "201.24.121.243",
       "server_port": 443,
       "uuid": "32b5ca9b-3f81-4031-965d-e8b074216e8d",
@@ -145,47 +153,36 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - netmix",
-      "server": "38.60.223.125",
-      "server_port": 13108,
-      "method": "aes-128-gcm",
-      "password": "8722de56b6c0b3f6a4d01cf91c07e6aa"
-    },
-    {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 09 - netmix",
-      "server": "fdat.titun.su",
+      "server": "201.51.11.65",
       "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "uuid": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "banket-restoran.su",
+        "server_name": "absolute-disaster.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
+          "public_key": "GiDgVRVYrTkv1mZJeFVWkr736Iey2kqLM6L0eUbffV8",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 10 - netmix",
-      "server": "185.178.208.167",
+      "server": "mbr.rkn-pediki.site",
       "server_port": 443,
-      "uuid": "4662bf2b-af58-0001-ae5f-ef3d7d3a624f",
+      "uuid": "2b5962e8-1ec2-0001-bdab-cefa57555d2a",
       "tls": {
         "enabled": true,
         "server_name": "mbr.rkn-pediki.site",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -202,12 +199,54 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 11 - netmix",
-      "server": "185.86.147.175",
+      "server": "prvtch.titun.su",
       "server_port": 443,
-      "uuid": "7955bf18-35c4-412d-aabd-c0b36c793063",
+      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "bhjolq0d0l.flowersgood.top",
+        "server_name": "perevodchiki.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "short_id": "428ef87fd47a3a32"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 12 - netmix",
+      "server": "185.215.184.79",
+      "server_port": 443,
+      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "185.215.184.79",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "short_id": "428ef87fd47a3a32"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 13 - netmix",
+      "server": "185.39.204.117",
+      "server_port": 10002,
+      "uuid": "facb802c-de2e-11f1-9a22-a3404e852f3b",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr2.vpnjantit.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -216,10 +255,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/service/telemetry/045d381f1166/",
-        "headers": {
-          "Host": "bhjolq0d0l.flowersgood.top"
-        }
+        "path": "/vpnjantit"
       }
     },
     {
@@ -237,7 +273,9 @@
         "🇷🇺 俄罗斯 (Russia) 08 - netmix",
         "🇷🇺 俄罗斯 (Russia) 09 - netmix",
         "🇷🇺 俄罗斯 (Russia) 10 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 11 - netmix"
+        "🇷🇺 俄罗斯 (Russia) 11 - netmix",
+        "🇷🇺 俄罗斯 (Russia) 12 - netmix",
+        "🇷🇺 俄罗斯 (Russia) 13 - netmix"
       ]
     },
     {
@@ -254,7 +292,9 @@
         "🇷🇺 俄罗斯 (Russia) 08 - netmix",
         "🇷🇺 俄罗斯 (Russia) 09 - netmix",
         "🇷🇺 俄罗斯 (Russia) 10 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 11 - netmix"
+        "🇷🇺 俄罗斯 (Russia) 11 - netmix",
+        "🇷🇺 俄罗斯 (Russia) 12 - netmix",
+        "🇷🇺 俄罗斯 (Russia) 13 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
