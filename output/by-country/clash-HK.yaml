@@ -18,8 +18,8 @@ proxies:
   udp: true
   type: hysteria2
   password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - netmix
@@ -28,7 +28,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
+  sni: 202.146.222.89
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - netmix
   server: vpn-hk-004.fastervpn.world
@@ -39,49 +39,13 @@ proxies:
   sni: vpn-hk-004.fastervpn.world
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - netmix
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - netmix
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üáüá
+  sni: https://t.me/wangcai2üá®üá≥
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - netmix
-  server: 103.172.116.201
-  port: 10103
-  udp: true
-  type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mjWmmSvs0D3V3130FT7MVbRs94pPuWXR7ffaQ_3A4kU
-    short-id: f96b3b17a0f5b1fe
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - netmix
-  server: hk1t.wawojk.dpdns.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5d967efa-702c-4cde-9e79-29386c8012e5
-  tls: true
-  servername: hk1t.wawojk.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /hk1-ws-1f8915c8964a
-    headers:
-      Host: hk1t.wawojk.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,9 +56,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 04 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 05 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 06 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 07 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,8 +66,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 04 - netmix
   - 🇭🇰 中国香港 (Hong Kong) 05 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 06 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 07 - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 08 - netmix
 rules:
 - MATCH,PROXIES

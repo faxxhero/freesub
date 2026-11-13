@@ -19,8 +19,8 @@
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
+        "server_name": "nas.aizhzo.com",
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -35,7 +35,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/clashv8",
+        "server_name": "202.146.222.89",
         "insecure": true
       }
     },
@@ -54,69 +54,13 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - netmix",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - netmix",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2üáüá",
+        "server_name": "https://t.me/wangcai2üá®üá≥",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - netmix",
-      "server": "103.172.116.201",
-      "server_port": 10103,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mjWmmSvs0D3V3130FT7MVbRs94pPuWXR7ffaQ_3A4kU",
-          "short_id": "f96b3b17a0f5b1fe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - netmix",
-      "server": "hk1t.wawojk.dpdns.org",
-      "server_port": 443,
-      "uuid": "5d967efa-702c-4cde-9e79-29386c8012e5",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk1t.wawojk.dpdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/hk1-ws-1f8915c8964a",
-        "headers": {
-          "Host": "hk1t.wawojk.dpdns.org"
-        }
       }
     },
     {
@@ -128,10 +72,7 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 03 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 04 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 05 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 06 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 07 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 08 - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 05 - netmix"
       ]
     },
     {
@@ -142,10 +83,7 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 03 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 04 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 05 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 06 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 07 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 08 - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 05 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

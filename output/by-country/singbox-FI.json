@@ -4,8 +4,48 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 01 - netmix",
+      "server": "177.202.75.56",
+      "server_port": 443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1.obxodvpn.us",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - netmix",
+      "server": "94.183.164.119",
+      "server_port": 24433,
+      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "tls": {
+        "enabled": true,
+        "server_name": "lakes.blog-forme.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - netmix",
+      "server": "177.202.65.158",
+      "server_port": 443,
+      "password": "247802ca-0fbb-428a-b807-91a6e571b5c7",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-fi2.snobvpn.online",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
       "server": "178.214.125.1",
       "server_port": 443,
       "uuid": "3f3160a0-747d-4fed-bf3d-4d884bfa964d",
@@ -15,7 +55,7 @@
         "server_name": "conf.emaar.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -26,7 +66,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - netmix",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -39,74 +79,22 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - netmix",
-      "server": "66.bmi.ir.asopardaz.ir",
-      "server_port": 35176,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "NjcyNmVjMTU1ZWU5NDA5ZDk0ODg1NWM1MzJjZTE3NDk=:ODg3ZjQxOGM2NzFhNGMzYWFhZTQ0NWE2YTY5NzljYjY="
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
-      "server": "146.103.118.189",
-      "server_port": 443,
-      "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl2.574ck.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/574ck-finland",
-        "headers": {
-          "Host": "nl2.574ck.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
-      "server": "66.bmi.ir.asopardaz.ir",
-      "server_port": 8443,
-      "uuid": "887f418c-671a-4c3a-aae4-45a6a6979cb6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "timeline.www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
-          "short_id": "e915"
-        }
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 06 - netmix",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "b79d736d-0f10-4169-b626-362059d18204",
+      "server": "s1.berluno.ir",
+      "server_port": 1155,
+      "uuid": "3c999d74-d578-4deb-8683-b017bf6598f0",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "tgju.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
-          "short_id": "10351b07c712d2a2"
+          "public_key": "o6UTWdONnTOvDOWmhfxXUoeOEtlw7VUkoAWkmOk_FWI",
+          "short_id": "4e4aaad65cc07da8"
         }
       }
     },
@@ -121,6 +109,29 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 08 - netmix",
+      "server": "146.103.118.189",
+      "server_port": 443,
+      "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl2.574ck.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/574ck-finland",
+        "headers": {
+          "Host": "nl2.574ck.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 09 - netmix",
       "server": "nele.neobo-tooth.ru",
       "server_port": 2053,
       "uuid": "b6c29ae7-4748-4049-b642-b695c0d2c776",
@@ -151,7 +162,8 @@
         "🇫🇮 芬兰 (Finland) 05 - netmix",
         "🇫🇮 芬兰 (Finland) 06 - netmix",
         "🇫🇮 芬兰 (Finland) 07 - netmix",
-        "🇫🇮 芬兰 (Finland) 08 - netmix"
+        "🇫🇮 芬兰 (Finland) 08 - netmix",
+        "🇫🇮 芬兰 (Finland) 09 - netmix"
       ]
     },
     {
@@ -165,7 +177,8 @@
         "🇫🇮 芬兰 (Finland) 05 - netmix",
         "🇫🇮 芬兰 (Finland) 06 - netmix",
         "🇫🇮 芬兰 (Finland) 07 - netmix",
-        "🇫🇮 芬兰 (Finland) 08 - netmix"
+        "🇫🇮 芬兰 (Finland) 08 - netmix",
+        "🇫🇮 芬兰 (Finland) 09 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
