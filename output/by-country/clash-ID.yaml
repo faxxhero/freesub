@@ -12,17 +12,35 @@ proxies:
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
+- name: 🇮🇩 印尼 (Indonesia) 02 - netmix
+  server: 13.249.231.85
+  port: 443
+  udp: true
+  type: vmess
+  uuid: a84c132a-3151-40fe-947b-4dd9a7d2122c
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: d7pu5mzr9c4b0.cloudfront.net
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: d7pu5mzr9c4b0.cloudfront.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
+  - 🇮🇩 印尼 (Indonesia) 02 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
+  - 🇮🇩 印尼 (Indonesia) 02 - netmix
 rules:
 - MATCH,PROXIES

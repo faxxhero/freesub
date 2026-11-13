@@ -4,38 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
-  server: dog-hk.kunlun01dns.com
-  port: 21021
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - netmix
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
-  server: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
-  sni: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
-  server: bd8d18d7-tmm5c0-tny186-4lg6.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
-  sni: bd8d18d7-tmm5c0-tny186-4lg6.hk3.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - netmix
+- name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
   server: 195.133.135.238
   port: 10086
   udp: true
@@ -43,15 +12,15 @@ proxies:
   uuid: b831381d-6324-4d53-ad4f-8cda48b30811
   alterId: 0
   cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
-  server: 161.114.15.215
-  port: 30502
+- name: 🇲🇾 马来西亚 (Malaysia) 02 (家宽) - netmix
+  server: 192.228.145.118
+  port: 10086
   udp: true
-  type: trojan
-  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 07 (家宽) - netmix
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+- name: 🇮🇳 印度 (India) 03 (家宽) - netmix
   server: 122.176.216.52
   port: 443
   udp: true
@@ -66,7 +35,15 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
+  server: 161.114.15.215
+  port: 30502
+  udp: true
+  type: trojan
+  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
   server: 59.125.69.23
   port: 443
   udp: true
@@ -84,26 +61,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
-  - 🇮🇳 印度 (India) 07 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
+  - 🇲🇾 马来西亚 (Malaysia) 02 (家宽) - netmix
+  - 🇮🇳 印度 (India) 03 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
-  - 🇮🇳 印度 (India) 07 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
+  - 🇲🇾 马来西亚 (Malaysia) 02 (家宽) - netmix
+  - 🇮🇳 印度 (India) 03 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
 rules:
 - MATCH,PROXIES

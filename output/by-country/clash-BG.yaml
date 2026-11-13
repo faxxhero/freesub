@@ -6,47 +6,54 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - netmix
   server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - netmix
-  server: 213.183.63.60
   port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - netmix
-  server: 213.183.63.60
-  port: 9029
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - netmix
-  server: 213.183.63.60
-  port: 9049
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - netmix
-  server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - netmix
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - netmix
   server: 213.183.63.60
   port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - netmix
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - netmix
+  server: 213.183.63.60
+  port: 9061
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - netmix
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - netmix
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - netmix
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - netmix
   server: 88.80.150.15
   port: 443
   udp: true
@@ -59,7 +66,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - netmix
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - netmix
   server: 195.123.226.21
   port: 443
   udp: true
@@ -71,25 +78,6 @@ proxies:
     public-key: rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - netmix
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - netmix
-  server: p1real4.greewebservices.ir
-  port: 1260
-  udp: true
-  type: vless
-  uuid: ade238d6-637e-4f6c-b1fc-268579b262f5
-  tls: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  servername: play.googleapis.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -105,7 +93,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - netmix
   - 🇧🇬 保加利亚 (Bulgaria) 08 - netmix
   - 🇧🇬 保加利亚 (Bulgaria) 09 - netmix
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -120,6 +107,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - netmix
   - 🇧🇬 保加利亚 (Bulgaria) 08 - netmix
   - 🇧🇬 保加利亚 (Bulgaria) 09 - netmix
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - netmix
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - netmix
-  server: 178.212.35.198
+  server: 139.84.166.47
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: GEdoeeqLZtkJRgSa
+- name: 🇮🇳 印度 (India) 02 - netmix
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 03 - netmix
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -15,8 +34,8 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 02 - netmix
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 - netmix
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -27,8 +46,23 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 03 - netmix
-  server: 103.172.116.191
+- name: 🇮🇳 印度 (India) 05 - netmix
+  server: 13.140.253.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: f1d3c8af71c4ef75625fcf446aa2c15b
+  tls: true
+  servername: xray-h0urp9tx-rapid-summit-2.cloady.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /050334203cc522a3
+    headers:
+      Host: xray-h0urp9tx-rapid-summit-2.cloady.io
+- name: 🇮🇳 印度 (India) 06 - netmix
+  server: 103.172.116.201
   port: 10303
   udp: true
   type: vless
@@ -40,28 +74,24 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 04 - netmix
-  server: 13.140.253.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: f1a7e2c8-b140-50d1-8acf-e62090f96599
-  tls: true
-  servername: xray-bprkdwje-clever-comet-4.cloady.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /27dbf143acdd7bca
-    headers:
-      Host: xray-bprkdwje-clever-comet-4.cloady.io
-- name: 🇮🇳 印度 (India) 05 - netmix
-  server: 178.239.150.72
-  port: 36542
+- name: 🇮🇳 印度 (India) 07 - netmix
+  server: 172.105.39.124
+  port: 7002
   udp: true
   type: ss
-  cipher: xchacha20-ietf-poly1305
-  password: tfvsLbsXV9PdNmxPA4zaWr7EOezLjv3dXejQq2Y5sXA=
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇮🇳 印度 (India) 08 - netmix
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +102,9 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - netmix
   - 🇮🇳 印度 (India) 04 - netmix
   - 🇮🇳 印度 (India) 05 - netmix
+  - 🇮🇳 印度 (India) 06 - netmix
+  - 🇮🇳 印度 (India) 07 - netmix
+  - 🇮🇳 印度 (India) 08 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,5 +115,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - netmix
   - 🇮🇳 印度 (India) 04 - netmix
   - 🇮🇳 印度 (India) 05 - netmix
+  - 🇮🇳 印度 (India) 06 - netmix
+  - 🇮🇳 印度 (India) 07 - netmix
+  - 🇮🇳 印度 (India) 08 - netmix
 rules:
 - MATCH,PROXIES
