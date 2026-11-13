@@ -18,18 +18,17 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
-  server: 176.120.21.23
-  port: 443
+  server: 38.107.234.57
+  port: 8443
   udp: true
   type: vless
-  uuid: 83cc8226-1087-49ae-aac3-1f157ddc57b4
-  flow: xtls-rprx-vision
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   tls: true
-  reality-opts:
-    public-key: OAU9917HKYqvTO59c9SvAL9BBh8v85tfJhw5PMg-2iU
-    short-id: c4d4cf50489d51
-  servername: yahoo.com
-  client-fingerprint: chrome
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
   server: 109.248.170.119
   port: 13447
