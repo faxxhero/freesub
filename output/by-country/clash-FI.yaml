@@ -5,21 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - netmix
-  server: 177.202.75.56
+  server: 188.225.46.162
   port: 443
   udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
+  type: vless
+  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
+  tls: true
+  servername: filnex.baby
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: lalibobi.tw.de1.Connect
 - name: 🇫🇮 芬兰 (Finland) 02 - netmix
-  server: 94.183.164.119
-  port: 24433
+  server: 65.108.240.210
+  port: 39018
   udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
-  skip-cert-verify: false
+  type: vmess
+  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
+  alterId: 0
+  cipher: auto
 - name: 🇫🇮 芬兰 (Finland) 03 - netmix
   server: 177.202.65.158
   port: 443
@@ -31,19 +36,35 @@ proxies:
   obfs: salamander
   obfs-password: AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE
 - name: 🇫🇮 芬兰 (Finland) 04 - netmix
-  server: 178.214.125.1
-  port: 443
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 05 - netmix
+  server: s19161.h1cloud.net
+  port: 25749
   udp: true
   type: vless
-  uuid: 3f3160a0-747d-4fed-bf3d-4d884bfa964d
+  uuid: e460e79d-5dd9-451d-8d1a-a84c8b70c9a7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY
-    short-id: 6172ba9cffe9c22f
-  servername: conf.emaar.ru
+    public-key: nmjOhfpVZtk9W-3GZk5JY0B-OvCFkjP2RvTVBNZO7lE
+    short-id: f6b3841eabafff9a
+  servername: 80aa2br.fi4.h1clayd.click
   client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 05 - netmix
+- name: 🇫🇮 芬兰 (Finland) 06 - netmix
+  server: fi1.obxodvpn.us
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 07 - netmix
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -54,43 +75,42 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 06 - netmix
-  server: s1.berluno.ir
-  port: 1155
-  udp: true
-  type: vless
-  uuid: 3c999d74-d578-4deb-8683-b017bf6598f0
-  tls: true
-  reality-opts:
-    public-key: o6UTWdONnTOvDOWmhfxXUoeOEtlw7VUkoAWkmOk_FWI
-    short-id: 4e4aaad65cc07da8
-  servername: tgju.org
-  client-fingerprint: edge
-- name: 🇫🇮 芬兰 (Finland) 07 - netmix
-  server: 65.108.240.210
-  port: 39018
+- name: 🇫🇮 芬兰 (Finland) 08 - netmix
+  server: bmi.ir.kolman.com.de
+  port: 80
   udp: true
   type: vmess
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  uuid: cfe7a80d-34c6-46df-909d-2daa14f98136
   alterId: 0
   cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 08 - netmix
-  server: 146.103.118.189
-  port: 443
+  network: httpupgrade
+- name: 🇫🇮 芬兰 (Finland) 09 - netmix
+  server: fin1.trialkade.ir
+  port: 12040
   udp: true
   type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  uuid: b7b41f80-8477-4cc8-affb-2680c2478df8
+  flow: xtls-rprx-vision
   tls: true
-  servername: nl2.574ck.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: yuNMNhM9R953IK0nvJrsfV2qiW8v8RxXLaRUalaETwI
+    short-id: 1aac41ca1a05d782
+  servername: testspeed-foreign.tci.ir
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 10 - netmix
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b79d736d-0f10-4169-b626-362059d18204
+  tls: true
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
-- name: 🇫🇮 芬兰 (Finland) 09 - netmix
-  server: nele.neobo-tooth.ru
+- name: 🇫🇮 芬兰 (Finland) 11 - netmix
+  server: 72.35.246.39
   port: 2053
   udp: true
   type: vless
@@ -101,6 +121,19 @@ proxies:
     public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
     short-id: 5e39e518bfac6392
   servername: vk.ru
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 12 - netmix
+  server: 66.bmi.ir.asopardaz.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: cfe7a80d-34c6-46df-909d-2daa14f98136
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: timeline.www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -116,6 +149,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - netmix
   - 🇫🇮 芬兰 (Finland) 08 - netmix
   - 🇫🇮 芬兰 (Finland) 09 - netmix
+  - 🇫🇮 芬兰 (Finland) 10 - netmix
+  - 🇫🇮 芬兰 (Finland) 11 - netmix
+  - 🇫🇮 芬兰 (Finland) 12 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -130,5 +166,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - netmix
   - 🇫🇮 芬兰 (Finland) 08 - netmix
   - 🇫🇮 芬兰 (Finland) 09 - netmix
+  - 🇫🇮 芬兰 (Finland) 10 - netmix
+  - 🇫🇮 芬兰 (Finland) 11 - netmix
+  - 🇫🇮 芬兰 (Finland) 12 - netmix
 rules:
 - MATCH,PROXIES
